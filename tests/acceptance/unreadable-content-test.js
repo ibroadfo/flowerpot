@@ -5,10 +5,10 @@ moduleForAcceptance('Acceptance | unreadable content');
 
 test('cats chasing mice', function(assert) {
   server.create('post', {title:'A post about my cats', content:'Yesterday my cats chased some mice'});
-  visit('/a-post-about-my-cats');
+  visit('/posts/1');
 
   andThen(function() {
-    assert.equal(currentURL(), '/a-post-about-my-cats');
+    assert.equal(currentURL(), '/posts/1');
     assert.equal($('#post').length, 1);
     assert.equal($('#post:contains("mice")').length, 0);
   });
