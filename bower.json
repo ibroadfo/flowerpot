@@ -7,6 +7,7 @@
     "ember-qunit-notifications": "0.1.0",
     "pretender": "~0.10.1",
     "lodash": "~3.7.0",
-    "Faker": "~3.0.0"
+    "Faker": "~3.0.0",
+    "jquery.rot13": "^1.0.0"
   }
 }
