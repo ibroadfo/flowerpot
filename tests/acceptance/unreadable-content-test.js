@@ -4,6 +4,7 @@ import moduleForAcceptance from 'flowerpot/tests/helpers/module-for-acceptance';
 moduleForAcceptance('Acceptance | unreadable content');
 
 test('cats chasing mice', function(assert) {
+  server.create('post');
   visit('/a-post-about-my-cats');
 
   andThen(function() {
