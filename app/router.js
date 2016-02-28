@@ -6,7 +6,6 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('a-post-about-my-cats');
 });
 
 export default Router;
