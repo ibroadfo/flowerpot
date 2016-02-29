@@ -12,11 +12,12 @@ moduleForComponent('message-post', 'Integration | Component | message post', {
 });
 
 test('it renders, but not the plaintext', function(assert) {
-  this.set('model', server.create('post'))
+  this.set('model', {encodedContent:'onqtre shpxre'})
 
   this.render(hbs`{{message-post model=model}}`);
 
   assert.notEqual(this.$().text().trim(), 'badger fucker');
+  assert.equal(this.$().text().trim(), 'onqtre shpxre');
 });
 
 // test('clicking decode decodes the text', function(assert) {
