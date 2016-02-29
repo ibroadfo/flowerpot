@@ -15,3 +15,23 @@ test('cats chasing mice', function(assert) {
     assert.equal($('#post:contains("zvpr")').length, 1);
   });
 });
+
+test('spiders all over the wall', function(assert) {
+  server.create('post', {title:'A post about spiders', encodedContent:'gurer jrer fcvqref rireljurer'});
+
+  visit('/posts/1');
+
+  andThen(function() {
+    assert.equal(currentURL(), '/posts/1');
+    assert.equal($('#post').length, 1);
+    assert.equal($('#post:contains("spiders")').length, 0);
+    assert.equal($('#post:contains("fcvqref")').length, 1);
+  });
+
+  click('#decode');
+
+  andThen(function() {
+    assert.equal($('#post:contains("spiders")').length, 1);
+    assert.equal($('#post:contains("fcvqref")').length, 0);
+  });
+});
