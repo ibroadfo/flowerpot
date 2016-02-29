@@ -17,7 +17,7 @@ test('it renders, but not the plaintext', function(assert) {
   this.render(hbs`{{message-post model=model}}`);
 
   assert.notEqual(this.$().text().trim(), 'badger fucker');
-  assert.equal(this.$().text().trim(), 'onqtre shpxre');
+  assert.equal(this.$('#post').text().trim(), 'onqtre shpxre');
 });
 
 test('clicking decode decodes the text', function(assert) {
