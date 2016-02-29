@@ -12,7 +12,7 @@ moduleForComponent('message-post', 'Integration | Component | message post', {
 });
 
 test('it renders, but not the plaintext', function(assert) {
-  this.set('model', {encodedContent:'onqtre shpxre'})
+  this.set('model', {encodedContent:'onqtre shpxre'});
 
   this.render(hbs`{{message-post model=model}}`);
 
@@ -21,7 +21,7 @@ test('it renders, but not the plaintext', function(assert) {
 });
 
 test('clicking decode decodes the text', function(assert) {
-  this.set('model2', server.create('post', {encodedContent:'onqtre shpxre'}))
+  this.set('model2', server.create('post', {encodedContent:'onqtre shpxre'}));
 
   this.render(hbs`{{message-post model=model2}}`);
 

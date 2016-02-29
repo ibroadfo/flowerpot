@@ -13,12 +13,12 @@ test('it exists', function(assert) {
 
 test('should only store encoded version of content', function(assert) {
   let post = this.subject({content:'allergies'});
-  assert.notEqual(post.get('encodedContent', 'allergies'))
-})
+  assert.notEqual(post.get('encodedContent', 'allergies'));
+});
 
 test('encoded content should be decodable', function(assert) {
     let post = this.subject({content:'allergies'});
-    assert.notEqual(post.get('encodedContent', 'allergies'))
+    assert.notEqual(post.get('encodedContent', 'allergies'));
 
-    assert.equal('allergies', post.get('rottenCoder').decode(post.get('encodedContent')))
-})
+    assert.equal('allergies', post.get('rottenCoder').decode(post.get('encodedContent')));
+});
