@@ -8,6 +8,6 @@ export default DS.Model.extend({
       return value;
     }
   }),
-  encodedContent: DS.attr('string')
+  encodedContent: DS.attr()
 
 });
