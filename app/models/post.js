@@ -7,6 +7,7 @@ export default DS.Model.extend({
       this.set('encodedContent', this.get('rottenCoder').encode(value))
       return value;
     }
-  })
+  }),
+  encodedContent: DS.attr('string')
 
 });
