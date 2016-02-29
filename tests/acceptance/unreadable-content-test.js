@@ -4,7 +4,7 @@ import moduleForAcceptance from 'flowerpot/tests/helpers/module-for-acceptance';
 moduleForAcceptance('Acceptance | unreadable content');
 
 test('cats chasing mice', function(assert) {
-  server.create('post', {title:'A post about my cats', encodedContent:'Lrfgreqnl zl pngf punfrq fbzr zvpr'});
+  server.create('post', {title:'A post about my cats', encoded_content:'Lrfgreqnl zl pngf punfrq fbzr zvpr'});
 
   visit('/posts/1');
 
@@ -17,7 +17,7 @@ test('cats chasing mice', function(assert) {
 });
 
 test('spiders all over the wall', function(assert) {
-  server.create('post', {title:'A post about spiders', encodedContent:'gurer jrer fcvqref rireljurer'});
+  server.create('post', {title:'A post about spiders', encoded_content:'gurer jrer fcvqref rireljurer'});
 
   visit('/posts/1');
 
