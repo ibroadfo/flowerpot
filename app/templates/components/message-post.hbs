@@ -1,4 +1,6 @@
 <p id='title'>{{model.title}}</p>
+<p>This post has the following content note attached, please only proceed with decoding if you're ok with this</p>
+<p id='note' style="color:red">{{model.note}}</p>
 <button id='decode' {{action 'decodeMe'}}>Decode the content please</button>
 <p id='post'>{{visibleContent}}</p>
 {{model.author}}
