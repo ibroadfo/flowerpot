@@ -7,6 +7,7 @@ export default Ember.Component.extend({
     decodeMe() {
       console.log('ok, well this is progress');
       this.set('visibleContent', this.get('rottenCoder').decode(this.get('model.encodedContent')));
+      this.$('button').prop('disabled', true);
     }
   }
 });
