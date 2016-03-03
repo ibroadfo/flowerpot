@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'flowerpot',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://flowerpot.firebaseio.com',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -40,9 +42,6 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-      ENV['ember-cli-mirage'] = {
-        enabled: true
-    };
   }
 
   return ENV;
