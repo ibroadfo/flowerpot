@@ -10,6 +10,7 @@ export default DS.Model.extend({
     }
   }),
   encodedContent: DS.attr(),
-  title: DS.attr()
+  title: DS.attr(),
+  note: DS.attr()
 
 });
