@@ -30,7 +30,5 @@
   "eqnull": true,
   "esnext": true,
   "unused": true,
-  "globals": {
-    "$": false
-  }
+  "jquery": true
 }
