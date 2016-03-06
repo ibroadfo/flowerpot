@@ -1,8 +1,19 @@
 import Ember from 'ember';
+import config from '../config/environment';
 import FirebaseAdapter from 'emberfire/adapters/firebase';
+import ActiveModelAdapter from 'active-model-adapter';
 
-const { inject } = Ember;
+let adapt;
 
-export default FirebaseAdapter.extend({
-  firebase: inject.service(),
-});
+if(config.environment !== 'test') {
+  const { inject } = Ember;
+
+  adapt = FirebaseAdapter.extend({
+    firebase: inject.service(),
+  });
+}
+else {
+  adapt = ActiveModelAdapter.extend();
+}
+
+export default adapt;
