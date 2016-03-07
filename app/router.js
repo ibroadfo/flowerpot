@@ -10,6 +10,7 @@ Router.map(function() {
     this.route('new');
   });
   this.route('post', { path: '/posts/:post_id' });
+  this.route('questions');
 });
 
 export default Router;
