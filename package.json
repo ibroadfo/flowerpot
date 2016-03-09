@@ -1,7 +1,7 @@
 {
   "name": "flowerpot",
-  "version": "0.0.0",
-  "description": "Small description for flowerpot goes here",
+  "version": "0.0.1-prerelease",
+  "description": "a messaging app with built-in content notes",
   "private": true,
   "directories": {
     "doc": "doc",
