@@ -1,7 +1,8 @@
 # Flowerpot
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+The main public instance of Flowerpot is at {link}.
+
+Flowerpot is a message-sharing app (think pastie) with explicit content notes; the author of a message can have complete confidence that the reader has definitely read and agreed to the note before reading the content of the message.
 
 ## Prerequisites
 
@@ -50,4 +51,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
