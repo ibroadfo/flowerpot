@@ -42,7 +42,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+We're currently using [firebase](http://firebase.com) as both backend and host; if you have an account with them you should be able to just `firebase deploy` the app.
 
 ## Further Reading / Useful Links
 
