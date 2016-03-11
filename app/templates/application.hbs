@@ -11,7 +11,9 @@
   <div class="row">
     <p>
       {{link-to "new post" 'posts.new'}}
-      {{link-to "list of posts" "posts.index"}}
+      {{#if showIndex.showIndex}}
+        {{link-to "list of posts" "posts.index"}}
+      {{/if}}
       {{link-to "questions" "questions"}}
     </p>
   </div>
