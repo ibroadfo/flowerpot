@@ -1,4 +1,4 @@
-# Flowerpot
+# Flowerpot [![Build Status](https://travis-ci.org/ibroadfo/flowerpot.svg?branch=master)](https://travis-ci.org/ibroadfo/flowerpot)
 
 The main public instance of Flowerpot is at {link}.
 
