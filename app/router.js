@@ -11,6 +11,7 @@ Router.map(function() {
   });
   this.route('post', { path: '/posts/:post_id' });
   this.route('questions');
+  this.route('technical-questions');
 });
 
 export default Router;
