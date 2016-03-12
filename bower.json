@@ -10,7 +10,8 @@
     "Faker": "~3.0.0",
     "jquery.rot13": "^1.0.0",
     "firebase": "^2.1.0",
-    "skeleton": "^2.0.4"
+    "skeleton-framework": "^1.0.8",
+    "normalize-css": "normalize.css#^3.0.3"
   },
   "devDependencies": {
     "blanket": "5e94fc30f2e694bb5c3718ddcbf60d467f4b4d26"

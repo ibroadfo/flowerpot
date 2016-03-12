@@ -7,7 +7,8 @@ module.exports = function(defaults) {
     // Add options here
     sassOptions: {
       includePaths: [
-        'bower_components/skeleton/css'
+        'bower_components/skeleton-framework/dist',
+        'bower_components/normalize-css'
       ]
     }
   });
