@@ -1,1 +1,4 @@
+<button {{action 'toggleAbuseForm'}}>{{buttonText}}</button>
+{{#if formVisible}}
 <a href="mailto:abuse@flower.pot?subject=flowerpot%20abuse%20report%20for%20post%20{{model.id}}&body={{currentURL}}">report abuse</a>
+{{/if}}
