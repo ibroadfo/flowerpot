@@ -7,7 +7,8 @@ export default Ember.Component.extend({
   actions: {
     decodeMe() {
       this.set('visibleContent', this.get('rottenCoder').decode(this.get('model.encodedContent')));
-      this.$('button').prop('disabled', true);
+      this.set('isDecoded', true);
+
     },
     createReport(props) {
       this.get('store').createRecord('abuse-report', {
