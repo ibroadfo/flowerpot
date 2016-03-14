@@ -17,6 +17,11 @@ export default Ember.Component.extend({
   actions: {
     toggleAbuseForm() {
       this.toggleProperty('formVisible');
+    },
+    submitReport() {
+      this.get('createReport')({
+        extraContext: this.$('#extra-context').val()
+      });
     }
   }
 });
