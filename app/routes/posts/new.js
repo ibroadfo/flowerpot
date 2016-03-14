@@ -1,17 +1,14 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  model() {
+    return this.store.createRecord('post');
+  },
   actions: {
-    submitTheThing() {
-      let p = this.get('store').createRecord('post', {
-          content: $('textarea.content').val(),
-          title:$('input.title').val(),
-          note: $('input.note').val(),
-          timestamp: new Date().getTime()
-        }
-      );
-      p.save().then( () => {
-        this.transitionTo('post', p);
+    submitTheThing(thing) {
+      thing.set('timestamp', new Date().getTime());
+      thing.save().then( () => {
+        this.transitionTo('post', thing);
       });
     }
   }
