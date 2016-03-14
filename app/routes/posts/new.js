@@ -6,7 +6,8 @@ export default Ember.Route.extend({
       let p = this.get('store').createRecord('post', {
           content: $('textarea.content').val(),
           title:$('input.title').val(),
-          note: $('input.note').val()
+          note: $('input.note').val(),
+          timestamp: new Date().getTime()
         }
       );
       p.save().then( () => {

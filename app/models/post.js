@@ -11,6 +11,7 @@ export default DS.Model.extend({
   }),
   encodedContent: DS.attr(),
   title: DS.attr(),
-  note: DS.attr()
+  note: DS.attr(),
+  timestamp: DS.attr('number')
 
 });
