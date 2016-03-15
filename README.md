@@ -2,7 +2,7 @@
 
 The main public instance of Flowerpot is at {link}.
 
-Flowerpot is a message-sharing app (think pastie) with explicit content notes; the author of a message can have complete confidence that the reader has definitely read and agreed to the note before reading the content of the message.
+Flowerpot is a post-sharing app (think pastie) with explicit content notes; the author of a post can have complete confidence that the reader has definitely read and agreed to the note before reading the content of the post.
 
 ## Prerequisites
 
