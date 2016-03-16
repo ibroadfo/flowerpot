@@ -27,6 +27,7 @@ module.exports = function(defaults) {
   // along with the exports of each module as its value.
 
   app.import('bower_components/jquery.rot13/dist/jquery.rot13.js');
+  app.import('bower_components/autolink/autolink-min.js');
 
   return app.toTree();
 };
