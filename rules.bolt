@@ -18,12 +18,12 @@ type Post {
   timestamp: Number
 }
 
-path /abuse_reports/{abuse_reportid} is AbuseReport {
+path /abuseReports/{abuseReportid} is AbuseReport {
   write() { true }
   read() { true }
 }
 
-path /abuse_reports {
+path /abuseReports {
   read() { false }
 }
 
