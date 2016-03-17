@@ -2,7 +2,7 @@
   "rules": {
     "posts": {
       "$postid": {
-        ".validate": "newData.hasChildren(['encodedContent', 'note', 'title', 'created'])",
+        ".validate": "newData.hasChildren(['encodedContent', 'note', 'title', 'timestamp'])",
         "encodedContent": {
           ".validate": "newData.isString()"
         },
@@ -12,14 +12,16 @@
         "title": {
           ".validate": "newData.isString()"
         },
+        "timestamp": {
+          ".validate": "newData.isNumber()"
+        },
         "$other": {
           ".validate": "false"
         },
         ".write": "data.val() == null",
-        "created": {
-          ".validate": "newData.isNumber() && newData.val() == (data.val() == null ? now : data.val())"
-        }
-      }
+        ".read": "true"
+      },
+      ".read": "true"
     }
   }
 }

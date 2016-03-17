@@ -1,5 +1,5 @@
 //cribbing heavily from chat.bolt sample
-path /posts/{postid} is Timestamped<Post> {
+path /posts/{postid} is Post {
   write() { true }
   read() { true }
 }
@@ -14,16 +14,6 @@ type Post {
 
   encodedContent: String,
   note: String,
-  title: String
+  title: String,
+  timestamp: Number
 }
-
-type Timestamped<T> extends T {
-  created: Created
-}
-
-type Created extends Number {
-  validate() { initial(this, now) }
-}
-
-initial(value, init) { value == (isInitial(value) ? init : prior(value)) }
-isInitial(value) { prior(value) == null }
