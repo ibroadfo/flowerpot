@@ -1,6 +1,11 @@
 //cribbing heavily from chat.bolt sample
 path /posts/{postid} is Timestamped<Post> {
   write() { true }
+  read() { true }
+}
+
+path /posts {
+  read() { true }
 }
 
 type Post {
