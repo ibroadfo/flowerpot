@@ -32,6 +32,6 @@ type AbuseReport {
   create() { true }
 
   extraContext: String,
-  post: Post,
+  post: String,
   timestamp: Number
 }
