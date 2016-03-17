@@ -17,3 +17,21 @@ type Post {
   title: String,
   timestamp: Number
 }
+
+path /abuse_reports/{abuse_reportid} is AbuseReport {
+  write() { true }
+  read() { true }
+}
+
+path /abuse_reports {
+  read() { false }
+}
+
+type AbuseReport {
+  // Allow create (but not modify/delete).
+  create() { true }
+
+  extraContext: String,
+  post: Post,
+  timestamp: Number
+}
