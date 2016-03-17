@@ -1,0 +1,25 @@
+{
+  "rules": {
+    "posts": {
+      "$postid": {
+        ".validate": "newData.hasChildren(['encodedContent', 'note', 'title', 'created'])",
+        "encodedContent": {
+          ".validate": "newData.isString()"
+        },
+        "note": {
+          ".validate": "newData.isString()"
+        },
+        "title": {
+          ".validate": "newData.isString()"
+        },
+        "$other": {
+          ".validate": "false"
+        },
+        ".write": "data.val() == null",
+        "created": {
+          ".validate": "newData.isNumber() && newData.val() == (data.val() == null ? now : data.val())"
+        }
+      }
+    }
+  }
+}

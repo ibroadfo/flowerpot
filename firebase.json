@@ -1,6 +1,7 @@
 {
   "firebase": "flowerpot",
   "public": "dist",
+  "rules": "rules.bolt",
   "ignore": [
     "firebase.json",
     "**/.*",

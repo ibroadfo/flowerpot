@@ -1,0 +1,24 @@
+//cribbing heavily from chat.bolt sample
+path /posts/{postid} is Timestamped<Post> {
+  write() { true }
+}
+
+type Post {
+  // Allow create (but not modify/delete).
+  create() { true }
+
+  encodedContent: String,
+  note: String,
+  title: String
+}
+
+type Timestamped<T> extends T {
+  created: Created
+}
+
+type Created extends Number {
+  validate() { initial(this, now) }
+}
+
+initial(value, init) { value == (isInitial(value) ? init : prior(value)) }
+isInitial(value) { prior(value) == null }
