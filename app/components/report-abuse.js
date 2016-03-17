@@ -16,7 +16,7 @@ export default Ember.Component.extend({
       this.toggleProperty('formVisible');
     },
     submitReport() {
-      this.get('createReport')({
+      this.sendAction('createReport', {
         extraContext: this.$('#extra-context').val()
       });
     }
