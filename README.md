@@ -42,7 +42,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-We're currently using [firebase](http://firebase.com) as both backend and host; if you have an account with them you should be able to just `firebase deploy` the app.
+[Any standard ember-cli deployment strategy should Just Work](http://ember-cli.com/user-guide/#deployments).
 
 ## Further Reading / Useful Links
 
