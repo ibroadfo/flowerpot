@@ -17,6 +17,7 @@ module.exports = function(environment) {
 
     APP: {
       showIndex: true,
+      useFireBase: false,
       // Here you can pass flags/options to your application instance
       // when it is created
     }
@@ -44,6 +45,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     ENV.APP.showIndex = false;
+    ENV.APP.useFireBase = true;
   }
 
   return ENV;
