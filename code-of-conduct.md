@@ -1,20 +1,20 @@
 # Flowerpot Code of Conduct 
 
 ## Introduction
-This Code of Conduct applies to everyone using APP_NAME; we trust and hope that you will utilise the application in good faith, and not for the harrassment or abuse of others. We outline our Code of Conduct here, with respect both to those using the app and those contributing to it. If we have made an error in the Code, or if it could be strengthened, please do not hesitate to contribute and send a PR. 
+This Code of Conduct applies to everyone using Flowerpot; we trust and hope that you will utilise the application in good faith, and not for the harrassment or abuse of others. We outline our Code of Conduct here, with respect both to those using the app and those contributing to it. If we have made an error in the Code, or if it could be strengthened, please do not hesitate to contribute and send a PR.
 
 ## Harrassment-Free Experience
-APP_NAME is dedicated to providing a harassment-free experience for everyone. We do not tolerate the use of APP_NAME as a tool of harassment, in any form.
+Flowerpot is dedicated to providing a harassment-free experience for everyone. We do not tolerate the use of Flowerpot as a tool of harassment, in any form.
 
-This code of conduct applies to all uses of APP_NAME, including (but not limited to) contributing to the repo itself as well as using the app to encode content. Any contributors or users who violate this code of conduct may be sanctioned or expelled from the repository. 
+This code of conduct applies to all uses of Flowerpot, including (but not limited to) contributing to the repo itself as well as using the app to encode content. Any contributors or users who violate this code of conduct may be sanctioned or expelled from the repository.
 
-Those who encode their content are responsible for ensuring that their content warnings are appropriate and relevant to the content. They are also responsible for ensuring that the content being encoded is not abusive. 
+Those who encode their content are responsible for ensuring that their content warnings are appropriate and relevant to the content. They are also responsible for ensuring that the content being encoded is not abusive.
 
-## Harrassment 
+## Harrassment
 Harassment includes, but isn't limited to:
 
 + Use of the app to encode deliberately abusive content.
-+ The use of inappropriate or inaccurate content warnings in a misleading manner, to mask abusive content. 
++ The use of inappropriate or inaccurate content warnings in a misleading manner, to mask abusive content.
 + Making offensive comments related to gender, gender identity and expression, sexual orientation, disability, mental illness, neuro(a)typicality, physical appearance, body size, age, race, or religion.
 + Unwelcome comments regarding a person’s lifestyle choices and practices, including those related to food, health, parenting, drugs, and employment.
 + Deliberate misgendering or use of ‘dead’ or rejected names.
@@ -32,7 +32,7 @@ Harassment includes, but isn't limited to:
 + Deliberate “outing” of any aspect of a person’s identity without their consent except as necessary to protect vulnerable people from intentional abuse.
 + Publication of non-harassing private communication.
 
-The team behind APP_NAME prioritizes marginalized people’s safety over privileged people’s comfort. We will not act on complaints regarding:
+The team behind Flowerpot prioritizes marginalized people’s safety over privileged people’s comfort. We will not act on complaints regarding:
 
 + ‘Reverse’ -isms, including ‘reverse racism,’ ‘reverse sexism,’ and ‘cisphobia’
 + Reasonable communication of boundaries, such as “leave me alone,” “go away,” or “I’m not discussing this with you.”
@@ -40,22 +40,22 @@ The team behind APP_NAME prioritizes marginalized people’s safety over privile
 + Criticizing racist, sexist, cissexist, or otherwise oppressive behavior or assumptions
 
 ## Reporting
-If you are being harassed by a contributor to APP_NAME, notice that someone else is being harassed, or have any other concerns, please contact us at [CONTACT POINT]. If the person who is harassing you is on the team, they will recuse themselves from handling your incident. We will respond as promptly as we can. 
+If you are being harassed by a contributor to Flowerpot, notice that someone else is being harassed, or have any other concerns, please contact us at [CONTACT POINT]. If the person who is harassing you is on the team, they will recuse themselves from handling your incident. We will respond as promptly as we can.
 
-Similarly, if someone has used APP_NAME with malicious intent and you have been affected, please contact us at the above e-mail. 
+Similarly, if someone has used Flowerpot with malicious intent and you have been affected, please contact us at the above e-mail.
 
-This code of conduct applies to the APP_NAME Github repository, but if you are being harassed by a member of the team or a contributor outside of this space, we still want to know about it. We will take all good-faith reports of harassment by APP_NAME members, especially the leadership, seriously. This includes harassment outside our space and harassment that took place at any point in time. We reserve the right to exclude people from APP_NAME based on their past behavior, including behavior outside APP_NAME spaces and behavior towards people who are not involved with APP_NAME.
+This code of conduct applies to the Flowerpot Github repository, but if you are being harassed by a member of the team or a contributor outside of this space, we still want to know about it. We will take all good-faith reports of harassment by Flowerpot members, especially the leadership, seriously. This includes harassment outside our space and harassment that took place at any point in time. We reserve the right to exclude people from Flowerpot based on their past behavior, including behavior outside Flowerpot spaces and behavior towards people who are not involved with Flowerpot.
 
 In order to protect volunteers from abuse and burnout, we reserve the right to reject any report we believe to have been made in bad faith. Reports intended to silence legitimate criticism may be deleted without response.
 
-We will respect confidentiality requests for the purpose of protecting victims of abuse. At our discretion, we may publicly name a person about whom we’ve received harassment complaints, or privately warn third parties about them, if we believe that doing so will increase the safety of APP_NAME contributors, users, or the general public. We will not name harassment victims without their affirmative consent.
+We will respect confidentiality requests for the purpose of protecting victims of abuse. At our discretion, we may publicly name a person about whom we’ve received harassment complaints, or privately warn third parties about them, if we believe that doing so will increase the safety of Flowerpot contributors, users, or the general public. We will not name harassment victims without their affirmative consent.
 
 ## Consequences
 Participants asked to stop any harassing behavior are expected to comply immediately.
 
-If a participant engages in harassing behavior, the response team may take any action they deem appropriate, up to and including expulsion from the APP_NAME GitHub repository and any associated spaces, and identification of the participant as a harasser to other APP_NAME members or the general public.
+If a participant engages in harassing behavior, the response team may take any action they deem appropriate, up to and including expulsion from the Flowerpot GitHub repository and any associated spaces, and identification of the participant as a harasser to other Flowerpot members or the general public.
 
 - - -
 
-## Attribution: 
+## Attribution:
 This anti-harassment policy is based on the example policy from the [Geek Feminism wiki](http://geekfeminism.wikia.com/), created by the Geek Feminism community.
