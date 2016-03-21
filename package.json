@@ -29,7 +29,7 @@
     "ember-cli-dependency-checker": "^1.2.0",
     "ember-cli-deploy": "0.6.0",
     "ember-cli-deploy-build": "0.1.1",
-    "ember-cli-deploy-firebase": "git+https://github.com/ibroadfo/ember-cli-deploy-firebase.git#cb59965fa5c738bb0bff97cd4f0f20f9cbf4a659",
+    "ember-cli-deploy-firebase": "git+https://github.com/ibroadfo/ember-cli-deploy-firebase.git#0ca9d3f7df5814b43d8a8deca9a785c1443e42bd",
     "ember-cli-deploy-revision-data": "0.1.1",
     "ember-cli-es5-shim": "^0.2.0",
     "ember-cli-htmlbars": "^1.0.1",
