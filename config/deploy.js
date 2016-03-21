@@ -2,14 +2,12 @@
 
 module.exports = function(deployTarget) {
   var ENV = {
-    build: {}
+    build: {},
+    fireBaseAppName: process.env.FIREBASE_APP_NAME
     // include other plugin configuration that applies to all deploy targets here
   };
   ENV["revision-data"] = {
     type: 'version-commit'
-  };
-  ENV["firebase"] = {
-    fireBaseAppName: process.env.FIREBASE_APP_NAME
   };
   if (deployTarget === 'development') {
     ENV.build.environment = 'development';
