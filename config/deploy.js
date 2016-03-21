@@ -8,6 +8,9 @@ module.exports = function(deployTarget) {
   ENV["revision-data"] = {
     type: 'version-commit'
   };
+  ENV["firebase"] = {
+    fireBaseAppName: process.env.FIREBASE_APP_NAME
+  };
   if (deployTarget === 'development') {
     ENV.build.environment = 'development';
     // configure other plugins for development deploy target here

@@ -1,5 +1,5 @@
 {
-  "firebase": "flowerpot",
+  "firebase": "",
   "public": "dist",
   "rules": "rules.bolt",
   "ignore": [
