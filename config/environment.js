@@ -44,8 +44,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.APP.showIndex = false;
-    // ENV.APP.useFireBase = true;
+    ENV.APP.showIndex = true;
+    ENV.APP.useFireBase = true;
   }
 
   return ENV;
