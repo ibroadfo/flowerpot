@@ -42,7 +42,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-[Any standard ember-cli deployment strategy should Just Work](http://ember-cli.com/user-guide/#deployments).
+We're hosting on firebase and deploying with [ember-cli-deploy-firebase](https://github.com/ibroadfo/ember-cli-deploy-firebase); you can use your own firebase app by setting `fireBaseAppName` in `config/deploy.js`.
 
 ## Further Reading / Useful Links
 
