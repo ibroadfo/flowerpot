@@ -1,8 +1,8 @@
 # Flowerpot [![Build Status](https://travis-ci.org/ibroadfo/flowerpot.svg?branch=master)](https://travis-ci.org/ibroadfo/flowerpot)
 
-The main public instance of Flowerpot is at {link}.
-
 Flowerpot is a post-sharing app (think pastie) with explicit content notes; the author of a post can have complete confidence that the reader has definitely read and agreed to the note before reading the content of the post.
+
+The main public instance of Flowerpot is at {link}; this page is for people who want to contribute to the development of the app. If you're new to software development, have a look at our [getting started guide](getting-started.md)
 
 ## Prerequisites
 
