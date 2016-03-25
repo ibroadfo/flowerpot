@@ -44,6 +44,8 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 We're hosting on firebase and deploying with [ember-cli-deploy-firebase](https://github.com/ibroadfo/ember-cli-deploy-firebase); you can use your own firebase app by setting `fireBaseAppName` in `config/deploy.js`.
 
+Any normal ember-cli deploy [method](http://ember-cli.com/user-guide/#deployments) should work though!
+
 ## Further Reading / Useful Links
 
 * [ember.js](http://emberjs.com/)
