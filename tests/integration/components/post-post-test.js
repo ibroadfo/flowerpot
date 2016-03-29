@@ -28,7 +28,7 @@ test('clicking decode decodes the text', function(assert) {
 
   assert.notEqual(this.$().text().trim(), 'badger fucker');
 
-  this.$('button').click();
+  this.$('#decode').click();
 
   assert.equal(this.$('#post').text().trim(), 'badger fucker');
 
