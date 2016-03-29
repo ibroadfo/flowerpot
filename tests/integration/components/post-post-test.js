@@ -1,7 +1,6 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 import startMirage from '../../helpers/setup-mirage-for-integration';
-import wait from 'ember-test-helpers/wait';
 
 moduleForComponent('post-post', 'Integration | Component | post post', {
   integration: true,
@@ -32,14 +31,4 @@ test('clicking decode decodes the text', function(assert) {
 
   assert.equal(this.$('#post').text().trim(), 'badger fucker');
 
-});
-
-test('it creates a report', function(assert) {
-  this.set('model', {encodedContent:'onqtre shpxre'});
-  this.render(hbs`{{post-post model=model}}`);
-  this.$('#toggle-report').click();
-  this.$('#submit-report').click();
-  return wait().then(() => {
-    assert.equal(this.$().text().trim(), 'Thank you for submitting your report.');
-  });
 });
