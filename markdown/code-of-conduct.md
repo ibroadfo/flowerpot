@@ -42,6 +42,8 @@ The team behind Flowerpot prioritizes marginalized people’s safety over privil
 ## Reporting
 If you are being harassed by a contributor to Flowerpot, notice that someone else is being harassed, or have any other concerns, please contact us at [CONTACT POINT]. If the person who is harassing you is on the team, they will recuse themselves from handling your incident. We will respond as promptly as we can.
 
+Individual posts can be reported using the 'rebort abuse' button on the post's page.
+
 Similarly, if someone has used Flowerpot with malicious intent and you have been affected, please contact us at the above e-mail.
 
 This code of conduct applies to the Flowerpot Github repository, but if you are being harassed by a member of the team or a contributor outside of this space, we still want to know about it. We will take all good-faith reports of harassment by Flowerpot members, especially the leadership, seriously. This includes harassment outside our space and harassment that took place at any point in time. We reserve the right to exclude people from Flowerpot based on their past behavior, including behavior outside Flowerpot spaces and behavior towards people who are not involved with Flowerpot.
