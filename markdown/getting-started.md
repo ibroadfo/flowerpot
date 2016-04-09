@@ -4,7 +4,7 @@ Hi, thanks for your interest in flowerpot development! Let's get you set up.
 
 First, you'll want to install github and node on your computer.
 
-* [github](desktop.github.com)
+* [github](http://desktop.github.com)
 * [node](https://nodejs.org/en/download/) (use an installer)
 
 Now, open a terminal window / command prompt and run the following
