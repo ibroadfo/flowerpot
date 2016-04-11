@@ -1,0 +1,7 @@
+{{outlet}}
+<p>abuse reports</p>
+<ul>
+  {{#each model as |foo|}}
+    <li>{{foo.extraContext}} | {{#link-to 'post' foo.post}}{{foo.post.title}}{{/link-to}}</li>
+  {{/each}}
+</ul>

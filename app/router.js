@@ -11,6 +11,7 @@ Router.map(function() {
   });
   this.route('post', { path: '/posts/:post_id' });
   this.route('mdContent', {path: '/mdContent/:file_name'});
+  this.route('admin');
 });
 
 export default Router;
