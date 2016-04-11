@@ -1,4 +1,11 @@
 {{outlet}}
+{{#if session.isAuthenticated}}
+  Logged in as {{session.currentUser.displayName}}
+  <button {{action "signOut"}}>Sign out</button>
+{{else}}
+  <button {{action "signIn" "twitter"}}>Sign in with Twitter</button>
+{{/if}}
+
 <p>abuse reports</p>
 <table>
   <thead><th>abuse context</th><th>post title</th></thead>

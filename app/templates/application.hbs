@@ -21,15 +21,9 @@
       {{link-to "technical questions" "mdContent" "technical-questions"}} |
       {{link-to "Code of Conduct" "mdContent" "code-of-conduct"}} |
       {{link-to "Privacy" "mdContent" "privacy"}} |
-      {{link-to "Getting Started (technical)" "mdContent" "getting-started"}}
-    </p>
-      {{#if session.isAuthenticated}}
+      {{link-to "Getting Started (technical)" "mdContent" "getting-started"}} |
       {{link-to 'admin' 'admin'}}
-        Logged in as {{session.currentUser.displayName}}
-        <button {{action "signOut"}}>Sign out</button>
-      {{else}}
-        <button {{action "signIn" "twitter"}}>Sign in with Twitter</button>
-      {{/if}}
+    </p>
   </div>
 
   <div class="row">
