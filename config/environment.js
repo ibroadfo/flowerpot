@@ -20,7 +20,7 @@ module.exports = function(environment) {
 
     APP: {
       showIndex: true,
-      useFireBase: true,
+      useFireBase: false,
       // Here you can pass flags/options to your application instance
       // when it is created
     }
