@@ -5,5 +5,8 @@ export default Ember.Route.extend({
     if (this.get('session.isAuthenticated')) {
       return this.store.findAll('abuseReport');
     }
+    else {
+      return [];
+    }
   }
 });
