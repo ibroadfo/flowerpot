@@ -24,7 +24,7 @@ path /abuseReports/{abuseReportid} is AbuseReport {
 }
 
 path /abuseReports {
-  read() { false }
+  read() { prior(root.admins[auth.uid]) != null }
 }
 
 type AbuseReport {
@@ -34,4 +34,9 @@ type AbuseReport {
   extraContext: String,
   post: String,
   timestamp: Number
+}
+
+path /admins {
+  write() { false }
+  read() { false }
 }
