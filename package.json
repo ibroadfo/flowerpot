@@ -51,6 +51,7 @@
     "ember-remodal": "1.0.0",
     "ember-resolver": "^2.0.3",
     "emberfire": "1.6.6",
-    "loader.js": "^4.0.0"
+    "loader.js": "^4.0.0",
+    "torii": "0.6.1"
   }
 }
