@@ -2,6 +2,7 @@ export default function() {
 this.get('/posts');
 this.get('/posts/:id');
 this.post('/posts');
+this.get('/abuse_reports', 'abuse-report');
 this.post('/abuse_reports', 'abuse-report');
 
   // These comments are here to help you get started. Feel free to delete them.
