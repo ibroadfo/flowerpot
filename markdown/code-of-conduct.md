@@ -40,7 +40,7 @@ The team behind Flowerpot prioritizes marginalized people’s safety over privil
 + Criticizing racist, sexist, cissexist, or otherwise oppressive behavior or assumptions
 
 ## Reporting
-If you are being harassed by a contributor to Flowerpot, notice that someone else is being harassed, or have any other concerns, please contact us at [CONTACT POINT]. If the person who is harassing you is on the team, they will recuse themselves from handling your incident. We will respond as promptly as we can.
+If you are being harassed by a contributor to Flowerpot, notice that someone else is being harassed, or have any other concerns, please contact us at <codeofconduct@flowerpot.fyi>. If the person who is harassing you is on the team, they will recuse themselves from handling your incident. We will respond as promptly as we can.
 
 Individual posts can be reported using the 'rebort abuse' button on the post's page.
 
