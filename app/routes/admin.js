@@ -8,5 +8,13 @@ export default Ember.Route.extend({
     else {
       return [];
     }
+  },
+  actions: {
+    error(error, transition) {
+      if (error) {
+        this.get("session").close();
+        this.refresh();
+      }
+    }
   }
 });
