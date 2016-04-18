@@ -42,7 +42,7 @@ The team behind Flowerpot prioritizes marginalized people’s safety over privil
 ## Reporting
 If you are being harassed by a contributor to Flowerpot, notice that someone else is being harassed, or have any other concerns, please contact us at <codeofconduct@flowerpot.fyi>. If the person who is harassing you is on the team, they will recuse themselves from handling your incident. We will respond as promptly as we can.
 
-Individual posts can be reported using the 'rebort abuse' button on the post's page.
+Individual posts can also be reported using the 'rebort abuse' button on the post's page.
 
 Similarly, if someone has used Flowerpot with malicious intent and you have been affected, please contact us at the above e-mail.
 
