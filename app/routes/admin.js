@@ -11,6 +11,7 @@ export default Ember.Route.extend({
   },
   actions: {
     error(error, transition) {
+      transition = transition; // jshint, i love you but you're bringing me down
       if (error) {
         this.get("session").close();
         this.refresh();
