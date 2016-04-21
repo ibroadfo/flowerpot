@@ -9,7 +9,7 @@ if(config.APP.useFireBase) {
   const { inject } = Ember;
 
   adapt = FirebaseAdapter.extend({
-    firebase: inject.service(),
+    firebase: inject.service()
   });
 }
 else {
