@@ -55,6 +55,6 @@
     "ember-resolver": "^2.0.3",
     "emberfire": "1.6.6",
     "loader.js": "^4.0.1",
-    "torii": "0.6.1"
+    "torii": "0.8.0"
   }
 }
