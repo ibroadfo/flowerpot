@@ -11,12 +11,19 @@
 </dl>
 <h4>technical</h4>
 <dl>
-  <dt>are my messages securely encrypted?</dt>
+  <dt>are my posts securely encrypted?</dt>
   <dd>no, we just encode them so they're not readable until decoded (technical faq link)</dd>
   <dt>why can't i login?</dt>
   <dd>to help minimise our users' exposure to abuse, we don't store any details about them :)</dd>
   <dt>how much detail should i put in my notes?</dt>
   <dd>good question. it depends on your expected audience, really. {expand}</dd>
+<<<<<<< HEAD:app/templates/questions.hbs
   <dt>why aren't you securely encrypting messages?</dt>
   <dd>the content of messages doesn't need to be secure, it's always readable; we just want to let people not read it.</dd>
+=======
+  <dt>Why 'Flowerpot'?</dt>
+  <dd>Just because</dd>
+  <dt>Are the flowers the messages?</dt>
+  <dd>Look, you're overthinking it</dd>
+>>>>>>> ibroadfo/master:markdown/questions.md
 </dl>

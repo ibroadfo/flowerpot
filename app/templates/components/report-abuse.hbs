@@ -1,1 +1,3 @@
-<a href="mailto:ibroadfo@gmail.com?subject=flowerpot%20abuse%20report%20for%20post%20{{model.id}}&body={{currentURL}}">report abuse</a>
+{{#ember-remodal openLink='report abuse' onConfirm='submitReport' confirmButton='send report'}}
+  <label>extra context if required {{input value=extraContext}}</label>
+{{/ember-remodal}}

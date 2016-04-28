@@ -1,5 +1,8 @@
 import Ember from 'ember';
+import config from '../config/environment';
 
 export default Ember.Controller.extend({
-  showIndex: Ember.inject.service()
+  showIndex: Ember.computed('property', function() {
+    return config.APP.showIndex;
+  })
 });

@@ -1,0 +1,42 @@
+//cribbing heavily from chat.bolt sample
+path /posts/{postid} is Post {
+  write() { true }
+  read() { true }
+}
+
+path /posts {
+  read() { true }
+}
+
+type Post {
+  // Allow create (but not modify/delete).
+  create() { true }
+
+  encodedContent: String,
+  note: String,
+  title: String,
+  timestamp: Number
+}
+
+path /abuseReports/{abuseReportid} is AbuseReport {
+  write() { true }
+  read() { true }
+}
+
+path /abuseReports {
+  read() { prior(root.admins[auth.uid]) != null }
+}
+
+type AbuseReport {
+  // Allow create (but not modify/delete).
+  create() { true }
+
+  extraContext: String,
+  post: String,
+  timestamp: Number
+}
+
+path /admins {
+  write() { false }
+  read() { false }
+}

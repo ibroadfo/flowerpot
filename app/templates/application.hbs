@@ -1,10 +1,17 @@
 <div class="container">
+<<<<<<< HEAD
   
+=======
+  <div class="row" ><span class="global-warning">
+    this site is likely to contain content that you may want to avoid; please exercise caution and self-care as a priority</span>
+  </div>
+>>>>>>> ibroadfo/master
   <div class="row">
     <h1>
         {{#link-to "index"}}
           Flowerpot
         {{/link-to}}
+<<<<<<< HEAD
         <a href="#what" id="about-link">(flower-what?)</a>
       </h1>
     
@@ -26,4 +33,27 @@
       </div>
     </div>
     
+=======
+      </h4>
+    </div>
+  </div>
+  <div class="row">
+    <p>
+      {{link-to "new post" 'posts.new'}} |
+      {{#if showIndex}}
+        {{link-to "list of posts (beta only)" "posts.index"}} |
+      {{/if}}
+      {{link-to "questions" "mdContent" "questions"}} |
+      {{link-to "technical questions" "mdContent" "technical-questions"}} |
+      {{link-to "Code of Conduct" "mdContent" "code-of-conduct"}} |
+      {{link-to "Privacy" "mdContent" "privacy"}} |
+      {{link-to "Getting Started (technical)" "mdContent" "getting-started"}} |
+      {{link-to 'admin' 'admin'}}
+    </p>
+  </div>
+
+  <div class="row">
+    <div class="one-half column">
+      {{outlet}}
+>>>>>>> ibroadfo/master
     </div>

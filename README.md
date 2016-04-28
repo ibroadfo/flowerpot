@@ -1,8 +1,8 @@
-# Flowerpot
+# Flowerpot [![Build Status](https://travis-ci.org/ibroadfo/flowerpot.svg?branch=master)](https://travis-ci.org/ibroadfo/flowerpot)
 
-The main public instance of Flowerpot is at {link}.
+Flowerpot is a post-sharing app (think pastie) with explicit content notes; the author of a post can have complete confidence that the reader has definitely read and agreed to the note before reading the content of the post.
 
-Flowerpot is a message-sharing app (think pastie) with explicit content notes; the author of a message can have complete confidence that the reader has definitely read and agreed to the note before reading the content of the message.
+The main public instance of Flowerpot is at {link}; this page is for people who want to contribute to the development of the app. If you're new to software development, have a look at our [getting started guide](getting-started.md)
 
 ## Prerequisites
 
@@ -42,7 +42,11 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-We're currently using [firebase](http://firebase.com) as both backend and host; if you have an account with them you should be able to just `firebase deploy` the app.
+We're hosting on firebase and deploying with [ember-cli-deploy-firebase](https://github.com/ibroadfo/ember-cli-deploy-firebase); you can use your own firebase app by setting `fireBaseAppName` in `config/deploy.js`.
+
+Any normal ember-cli deploy [method](http://ember-cli.com/user-guide/#deployments) should work though!
+
+You can set `useFireBase` to false in config/environment.js if you're not using firebase as your backend.
 
 ## Further Reading / Useful Links
 

@@ -5,11 +5,11 @@ import ActiveModelAdapter from 'active-model-adapter';
 
 let adapt;
 
-if(config.environment === 'production') {
+if(config.APP.useFireBase) {
   const { inject } = Ember;
 
   adapt = FirebaseAdapter.extend({
-    firebase: inject.service(),
+    firebase: inject.service()
   });
 }
 else {

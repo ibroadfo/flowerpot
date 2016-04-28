@@ -11,14 +11,5 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{report-abuse}}`);
 
-  assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#report-abuse}}
-      template block text
-    {{/report-abuse}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$('a:first').text().trim(), 'report abuse');
 });

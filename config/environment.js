@@ -5,7 +5,10 @@ module.exports = function(environment) {
     modulePrefix: 'flowerpot',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://flowerpot.firebaseio.com',
+    firebase: 'https://' + process.env.FIREBASE_APP_NAME + '.firebaseio.com',
+    torii: {
+      sessionServiceName: 'session'
+    },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -16,6 +19,8 @@ module.exports = function(environment) {
     },
 
     APP: {
+      showIndex: true,
+      useFireBase: false,
       // Here you can pass flags/options to your application instance
       // when it is created
     }
@@ -42,6 +47,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    ENV.APP.showIndex = true;
+    ENV.APP.useFireBase = true;
   }
 
   return ENV;

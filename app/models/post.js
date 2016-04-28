@@ -4,6 +4,9 @@ import DS from 'ember-data';
 export default DS.Model.extend({
   rottenCoder: Ember.inject.service(),
   content: Ember.computed({
+    get() {
+      return '';
+    },
     set(key, value) {
       this.set('encodedContent', this.get('rottenCoder').encode(value));
       return value;
@@ -11,6 +14,7 @@ export default DS.Model.extend({
   }),
   encodedContent: DS.attr(),
   title: DS.attr(),
-  note: DS.attr()
+  note: DS.attr(),
+  timestamp: DS.attr('number')
 
 });

@@ -1,7 +1,7 @@
 {{outlet}}
 <form>
-  <label>title: <input class='title' /> </label>
-  <label>warning note: <input class='note' /> </label>
-  <label>content: <br> <textarea class='content' /> </label>
-  <button class="submit button-primary" {{action 'submitTheThing'}}>submit</button>
+  <label>title: {{input class='title' value=model.title}} </label>
+  <label>warning note: {{input class='note' value=model.note}} </label>
+  <label>content: <br> {{textarea class='content' value=model.content}} </label>
+  <button class="submit button-primary" {{action 'submitTheThing' model}}>submit</button>
 </form>
