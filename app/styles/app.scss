@@ -1,22 +1,46 @@
 @import "normalize";
 @import "skeleton";
-/* Coolors Exported Palette - coolors.co/48acf0-a491d3-594236-6f584b-ccdde2 */
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+@import url(https://fonts.googleapis.com/css?family=Chivo:400,900);
 
-$color1: #48acf0; //rgba(72, 172, 240, 100)
-$color2: #a491d3; //rgba(164, 145, 211, 100)
-$color3: #594236; //rgba(89, 66, 54, 100)
-$color4: #6f584b; //rgba(111, 88, 75, 100)
-$color5: #ccdde2; //rgba(204, 221, 226, 100)
+//* { outline: 1px dashed #AAA; }
+
+$sans: 'Chivo', sans-serif; 
+$sanstwo: 'Inconsolata', sans-serif;
 
 body{
-  background-color: $color2;
+  font-family: $sanstwo; 
+  color: #333;
+  padding: 2rem 0 0;
 }
+
+h1 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 2.5rem;
+  a {
+  color: #3D9970;
+    text-transform: uppercase;
+     text-decoration: none;    
+  }
+  #about-link {
+   font-size: 1.2rem; 
+  }
+}
+
+h2 {
+ font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
 a{
-  color: $color5;
+  
 }
-h4 a{
-  color: pink;
+
+label {
+ text-transform: uppercase;
 }
+
 #note{
   background-color: red;
 }
@@ -26,3 +50,16 @@ h4 a{
 .report-abuse{
   font-size: smaller;
 }
+
+
+
+@media (min-width: 560px) and (max-width: 855px) {
+  .button {
+    display: block;
+    max-width: 100%;
+    padding: 0 0;
+    font-size: 0.65rem;
+  }
+}
+
+

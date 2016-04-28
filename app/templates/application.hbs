@@ -1,27 +1,29 @@
 <div class="container">
+  
   <div class="row">
-    <div class="one-half column">
-      <h4>
+    <h1>
         {{#link-to "index"}}
-          <img src="/images/freedo-Plant-in-Pot-300px.png" style="height:100px">Flowerpot
+          Flowerpot
         {{/link-to}}
-      </h4>
-    </div>
-  </div>
-  <div class="row">
-    <p>
-      {{link-to "new message" 'posts.new'}}
+        <a href="#what" id="about-link">(flower-what?)</a>
+      </h1>
+    
+        {{#link-to "index" class="button"}}
+          introduction
+        {{/link-to}}
+        
+      {{link-to "new message" 'posts.new' class="button"}}
       {{#if showIndex.showIndex}}
-        {{link-to "list of posts" "posts.index"}}
+        {{link-to "list of posts" "posts.index" class="button"}}
       {{/if}}
-      {{link-to "questions" "questions"}}
-      {{link-to "technical-questions" "technical-questions"}}
-    </p>
-  </div>
-
-  <div class="row">
-    <div class="one-half column">
-      {{outlet}}
+      {{link-to "questions" "questions" class="button"}}
+    
     </div>
-  </div>
-</div>
+    <div class="row">
+      
+      <div class="column six" id="what">
+        {{outlet}}
+      </div>
+    </div>
+    
+    </div>
