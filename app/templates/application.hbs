@@ -10,50 +10,27 @@
         {{/link-to}}
         <a href="#what" id="about-link">(flower-what?)</a>
       </h1>
-    
+
         {{#link-to "index" class="button"}}
           introduction
         {{/link-to}}
-        
-      {{link-to "new message" 'posts.new' class="button"}}
+
+      {{link-to "new post" 'posts.new' class="button"}}
       {{#if showIndex.showIndex}}
-        {{link-to "list of posts" "posts.index" class="button"}}
+        {{link-to "list of posts (beta only)" "posts.index" class="button"}}
       {{/if}}
-      {{link-to "questions" "questions" class="button"}}
-    
+      {{link-to "questions" "mdContent" "questions" class="button"}}
+      {{link-to "technical questions" "mdContent" "technical-questions"  class="button"}}
+      {{link-to "Code of Conduct" "mdContent" "code-of-conduct" class="button"}}
+      {{link-to "Privacy" "mdContent" "privacy" class="button"}}
+      {{link-to "Getting Started (technical)" "mdContent" "getting-started" class="button"}}
+      {{link-to 'admin' 'admin'}}
+
     </div>
     <div class="row">
-      
+
       <div class="column six" id="what">
         {{outlet}}
       </div>
     </div>
 </div>
-<!--
-
-      </h4>
-    </div>
-  </div>
-  <div class="row">
-    <p>
-      {{link-to "new post" 'posts.new'}} |
-      {{#if showIndex}}
-        {{link-to "list of posts (beta only)" "posts.index"}} |
-      {{/if}}
-      {{link-to "questions" "mdContent" "questions"}} |
-      {{link-to "technical questions" "mdContent" "technical-questions"}} |
-      {{link-to "Code of Conduct" "mdContent" "code-of-conduct"}} |
-      {{link-to "Privacy" "mdContent" "privacy"}} |
-      {{link-to "Getting Started (technical)" "mdContent" "getting-started"}} |
-      {{link-to 'admin' 'admin'}}
-    </p>
-  </div>
-
-  <div class="row">
-    <div class="one-half column">
-      {{outlet}}
-      </div>
-    </div>
-  </div>
-</div>
--->
