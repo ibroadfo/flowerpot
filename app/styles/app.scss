@@ -1,33 +1,51 @@
 @import "normalize";
 @import "skeleton";
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-@import url(https://fonts.googleapis.com/css?family=Chivo:400,900);
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
 @import url(https://fonts.googleapis.com/css?family=Karla:400,700);
+@import url(https://fonts.googleapis.com/css?family=Neuton:300,700);
 
 //* { outline: 1px dashed #AAA; }
 
-//$sans: 'Chivo', sans-serif; 
-//$sanstwo: 'Roboto', sans-serif;
-$sansthree: 'Karla', sans-serif;
+$sanstwo: 'Fjalla One', sans-serif;
+$sans: 'Karla', sans-serif;
+$serif: 'Neuton', serif;
 
 body{
-  font-family: $sansthree; 
+  font-family: $sans; 
   color: #333;
   padding: 0 0 2rem;
   margin: 0 0;
 }
 
 h1 {
-//  font-weight: bold;
-//  letter-spacing: 1px;
-//  font-size: 2.5rem;
+  font-size: 2.5rem;
+  margin: 0 0 1rem;
   a {
   }
 }
 
+h1, h2, h3, h4, h5 {
+ font-family: $serif; 
+  font-weight: bold;
+  letter-spacing: normal;
+}
+
+h3 {
+ font-size: 1.7rem;
+}
+
+ul {
+ margin-bottom: 1rem;
+  padding-left: 1rem;
+  li {
+   margin-bottom: 0; 
+  }
+}
+
 h2 {
-// font-size: 1.5rem;
-//  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: normal;
 }
 
 #info a {
@@ -51,7 +69,6 @@ label {
 .report-abuse{
   font-size: smaller;
 }
-
 
 header {
  background: #eee;
@@ -85,7 +102,12 @@ h1 a {
   background: #C2474B;
 }
 
-#newPostHeader{ /* When you create a new post, this is the background of the text */ 
+#new-post-header{ /* When you create a new post, this is the background of the text */ 
   background-color:lightblue; 
+  font-weight: bold;
+  padding: 1rem;
+  display: block;
+  margin-bottom: 1rem;
+  color: white;
 }
 
