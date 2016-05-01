@@ -12,15 +12,22 @@ $serif: 'Neuton', serif;
 
 body{
   font-family: $sans; 
-  color: #333;
+  color: #444;
   padding: 0 0 2rem;
   margin: 0 0;
+}
+
+header {
+  background: #eee;
+  padding: 3rem 0;
+  margin-bottom: 2rem;
 }
 
 h1 {
   font-size: 2.5rem;
   margin: 0 0 1rem;
   a {
+    color: #444;
   }
 }
 
@@ -30,8 +37,31 @@ h1, h2, h3, h4, h5 {
   letter-spacing: normal;
 }
 
+h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: normal;
+}
+
 h3 {
  font-size: 1.7rem;
+}
+
+h4 {
+ font-size: 1.5rem; 
+  margin-bottom: 0;
+}
+
+h5 {
+ font-size: 1.25rem; 
+  font-family: $sans;
+  &#psa { 
+  margin-bottom: 0;
+  }
+}
+
+p {
+ margin-bottom: 1rem; 
 }
 
 ul {
@@ -40,20 +70,6 @@ ul {
   li {
    margin-bottom: 0; 
   }
-}
-
-h2 {
-  font-size: 2rem;
-  font-weight: normal;
-  letter-spacing: normal;
-}
-
-#info a {
-   display: block;
-}
-
-p {
- margin-bottom: 1rem; 
 }
 
 label {
@@ -70,12 +86,6 @@ label {
   font-size: smaller;
 }
 
-header {
- background: #eee;
-  padding: 3rem 0;
-  margin-bottom: 1rem;
-}
-
 .button.create-new {
   font-size: 1.5rem;
   background: #9FDFAC;
@@ -90,10 +100,6 @@ header {
   }
 }
 
-h1 a {
- color: #333; 
-}
-
 .global-warning{
   color: white;
   display: block;
@@ -102,7 +108,7 @@ h1 a {
   background: #C2474B;
 }
 
-#new-post-header{ /* When you create a new post, this is the background of the text */ 
+#new-post-header{
   background-color:lightblue; 
   font-weight: bold;
   padding: 1rem;
@@ -111,3 +117,8 @@ h1 a {
   color: white;
 }
 
+footer {
+ border-top: 1px solid #ddd;
+  padding-top: 2rem;
+  margin-top: 1rem;
+}
