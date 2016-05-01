@@ -1,40 +1,41 @@
 @import "normalize";
 @import "skeleton";
-@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Chivo:400,900);
+@import url(https://fonts.googleapis.com/css?family=Karla:400,700);
 
 //* { outline: 1px dashed #AAA; }
 
-$sans: 'Chivo', sans-serif; 
-$sanstwo: 'Inconsolata', sans-serif;
+//$sans: 'Chivo', sans-serif; 
+//$sanstwo: 'Roboto', sans-serif;
+$sansthree: 'Karla', sans-serif;
 
 body{
-  font-family: $sanstwo; 
+  font-family: $sansthree; 
   color: #333;
-  padding: 2rem 0 0;
+  padding: 0 0 2rem;
+  margin: 0 0;
 }
 
 h1 {
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-size: 2.5rem;
+//  font-weight: bold;
+//  letter-spacing: 1px;
+//  font-size: 2.5rem;
   a {
-  color: #3D9970;
-    text-transform: uppercase;
-     text-decoration: none;    
-  }
-  #about-link {
-   font-size: 1.2rem; 
   }
 }
 
 h2 {
- font-size: 1.5rem;
-  text-transform: uppercase;
+// font-size: 1.5rem;
+//  text-transform: uppercase;
 }
 
-a{
-  
+#info a {
+   display: block;
+}
+
+p {
+ margin-bottom: 1rem; 
 }
 
 label {
@@ -52,24 +53,39 @@ label {
 }
 
 
+header {
+ background: #eee;
+  padding: 3rem 0;
+  margin-bottom: 1rem;
+}
 
-@media (min-width: 560px) and (max-width: 855px) {
-  .button {
-    display: block;
-    max-width: 100%;
-    padding: 0 0;
-    font-size: 0.65rem;
+.button.create-new {
+  font-size: 1.5rem;
+  background: #9FDFAC;
+  border: 1px solid #9FDFAC;
+  height: auto;
+  padding: 1rem 2rem;
+  color: white;
+  transition-duration: 200ms;
+  &:hover {
+    background: darken(#9FDFAC, 5%);
+    border: 1px solid #9FDFAC; 
   }
 }
 
-
-
-.global-warning{
-  background-color: red;
-  color: black;
+h1 a {
+ color: #333; 
 }
 
-#newPostHeader{
-  background-color:lightblue
+.global-warning{
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 1rem 0;
+  background: #C2474B;
+}
+
+#newPostHeader{ /* When you create a new post, this is the background of the text */ 
+  background-color:lightblue; 
 }
 

@@ -1,36 +1,54 @@
-<div class="container">
 
-  <div class="row"><span class="global-warning">
-    this site is likely to contain content that you may want to avoid; please exercise caution and self-care as a priority</span>
-  </div>
-  <div class="row">
+
+  <span class="global-warning">
+    This site is likely to contain content that you may want to avoid; please exercise caution and self-care as a priority.
+    [ {{link-to 'admin' 'admin'}} ]
+    </span>
+    
+<header>
+    <div class="container">
+    <div class="row">
     <h1>
         {{#link-to "index"}}
           Flowerpot
         {{/link-to}}
-        <a href="#what" id="about-link">(flower-what?)</a>
+        
       </h1>
+      <h2>An app for safe content sharing.</h2>
 
-        {{#link-to "index" class="button"}}
-          introduction
-        {{/link-to}}
-
-      {{link-to "new post" 'posts.new' class="button"}}
+      {{link-to "Create New Pot" 'posts.new' class="button create-new"}}
       {{#if showIndex.showIndex}}
         {{link-to "list of posts (beta only)" "posts.index" class="button"}}
       {{/if}}
-      {{link-to "questions" "mdContent" "questions" class="button"}}
-      {{link-to "technical questions" "mdContent" "technical-questions"  class="button"}}
-      {{link-to "Code of Conduct" "mdContent" "code-of-conduct" class="button"}}
-      {{link-to "Privacy" "mdContent" "privacy" class="button"}}
-      {{link-to "Getting Started (technical)" "mdContent" "getting-started" class="button"}}
-      {{link-to 'admin' 'admin'}}
 
     </div>
+  </div>
+</header>
+   
+<div class="container">
     <div class="row">
 
-      <div class="column six" id="what">
+      <div class="column">
         {{outlet}}
       </div>
     </div>
+    
 </div>
+
+<footer>
+  <div class="container">
+    <div class="row" id="info">
+      <div class="column six">
+        <h3>More information</h3>
+      {{link-to "FAQ" "mdContent" "questions"}}
+      {{link-to "Code of Conduct" "mdContent" "code-of-conduct" class=""}}
+      {{link-to "Privacy" "mdContent" "privacy" class=""}}
+      </div>
+      <div class="column six">
+        <h3>Technical</h3>
+      {{link-to "Technical FAQ" "mdContent" "technical-questions"}}
+      {{link-to "Getting Started (technical)" "mdContent" "getting-started" class=""}}
+      </div>
+    </div>
+  </div>
+</footer>
