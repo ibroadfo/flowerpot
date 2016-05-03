@@ -1,26 +1,26 @@
 <span class="global-warning">
 This site is likely to contain content that you may want to avoid; please exercise caution and self-care as a priority.
-[ {{link-to 'admin' 'admin'}} ]
 </span>
-    
+
 <header>
   <div class="container">
     <div class="row">
       <h1>
         {{#link-to "index"}}
           Flowerpot
-        {{/link-to}} 
+        {{/link-to}}
       </h1>
       <h2>An app for safe content sharing.</h2>
 
-      {{link-to "Create New Pot" 'posts.new' class="button create-new"}} or <a href="#">see an example</a>?
-      {{#if showIndex.showIndex}}
+      {{link-to "Create New Pot" 'posts.new' class="button create-new"}} or {{#link-to "post" 'example'}}
+see an example{{/link-to}}?
+      {{#if showIndex}}
         {{link-to "list of posts (beta only)" "posts.index" class="button"}}
       {{/if}}
     </div>
   </div>
 </header>
-   
+
 <div class="container">
     <div class="row">
       <div class="column">
@@ -35,11 +35,13 @@ This site is likely to contain content that you may want to avoid; please exerci
       <div class="column">
         <h4>Want to know more?</h4>
         <p>If you'd like to learn more about Flowerpot, there's more info in the {{link-to "FAQ" "mdContent" "questions"}},  {{link-to "Code of Conduct" "mdContent" "code-of-conduct" class=""}}, and {{link-to "Privacy" "mdContent" "privacy" class=""}} sections.</p>
-          
+
         <p>We also have a {{link-to "Technical FAQ" "mdContent" "technical-questions"}} as well as a {{link-to "Getting Started Guide" "mdContent" "getting-started" class=""}}. For the development-inclined, our Github repo is located <a href="https://github.com/ibroadfo/flowerpot">here</a>.</p>
-           
+
            <h4>Got a question? Want to help?</h4>
-           <p>Please do <a href="#">get in touch</a> if you have a question that's gone unanswered, or if you want to contribute but don't feel comfortable with Github. We'd love to hear from you!</p>
+           <p>Please do <a href="mailto:flowerpot@flowerpot.fyi">get in touch</a> if you have a question that's gone unanswered, or if you want to contribute but don't feel comfortable with Github. We'd love to hear from you!</p>
+
+          <p> [ {{link-to 'admin' 'admin'}} ] </p>
       </div>
     </div>
   </div>
