@@ -5,18 +5,22 @@ This site is likely to contain content that you may want to avoid; please exerci
 <header>
   <div class="container">
     <div class="row">
+     <div class="column">
       <h1>
         {{#link-to "index"}}
           Flowerpot
         {{/link-to}}
+        
       </h1>
       <h2>An app for safe content sharing.</h2>
-
-      {{link-to "Create New Pot" 'posts.new' class="button create-new"}} or {{#link-to "post" 'example'}}
-see an example{{/link-to}}?
+      
+      {{link-to "Create New Pot" 'posts.new' class="button create-new"}}
+      {{link-to "See an Example" 'post' 'example' class="button"}}
       {{#if showIndex}}
         {{link-to "list of posts (beta only)" "posts.index" class="button"}}
       {{/if}}
+      
+      </div>
     </div>
   </div>
 </header>
@@ -32,11 +36,13 @@ see an example{{/link-to}}?
 <footer>
   <div class="container">
     <div class="row" id="info">
-      <div class="column">
+      <div class="one-half column">
         <h4>Want to know more?</h4>
         <p>If you'd like to learn more about Flowerpot, there's more info in the {{link-to "FAQ" "mdContent" "questions"}},  {{link-to "Code of Conduct" "mdContent" "code-of-conduct" class=""}}, and {{link-to "Privacy" "mdContent" "privacy" class=""}} sections.</p>
 
         <p>We also have a {{link-to "Technical FAQ" "mdContent" "technical-questions"}} as well as a {{link-to "Getting Started Guide" "mdContent" "getting-started" class=""}}. For the development-inclined, our Github repo is located <a href="https://github.com/ibroadfo/flowerpot">here</a>.</p>
+           </div>
+      <div class="one-half column">
 
            <h4>Got a question? Want to help?</h4>
            <p>Please do <a href="mailto:flowerpot@flowerpot.fyi">get in touch</a> if you have a question that's gone unanswered, or if you want to contribute but don't feel comfortable with Github. We'd love to hear from you!</p>
