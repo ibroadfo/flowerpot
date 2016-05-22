@@ -10,9 +10,9 @@ test('cats chasing mice', function(assert) {
 
   andThen(function() {
     assert.equal(currentURL(), '/posts/1');
-    assert.equal($('#post').length, 1);
-    assert.equal($('#post:contains("mice")').length, 0);
-    assert.equal($('#post:contains("zvpr")').length, 1);
+    assert.equal($('.full-post').length, 1);
+    assert.equal($('.full-post:contains("mice")').length, 0);
+    assert.equal($('.full-post:contains("zvpr")').length, 1);
   });
 });
 
@@ -23,15 +23,15 @@ test('spiders all over the wall', function(assert) {
 
   andThen(function() {
     assert.equal(currentURL(), '/posts/1');
-    assert.equal($('#post').length, 1);
-    assert.equal($('#post:contains("spiders")').length, 0);
-    assert.equal($('#post:contains("fcvqref")').length, 1);
+    assert.equal($('.full-post').length, 1);
+    assert.equal($('.full-post:contains("spiders")').length, 0);
+    assert.equal($('.full-post:contains("fcvqref")').length, 1);
   });
 
-  click('#decode');
+  click('.button-decode');
 
   andThen(function() {
-    assert.equal($('#post:contains("spiders")').length, 1);
-    assert.equal($('#post:contains("fcvqref")').length, 0);
+    assert.equal($('.full-post:contains("spiders")').length, 1);
+    assert.equal($('.full-post:contains("fcvqref")').length, 0);
   });
 });
