@@ -1,4 +1,6 @@
-<h4>general</h4>
+<div class="two columns"> </div>
+<div class="eight columns">
+  <h3>General</h3>
 <dl>
   <dt>isn't this just pandering to the socialist liberal elite?</dt>
   <dd>no</dd>
@@ -9,7 +11,8 @@
   <dt>should i use this app for posting spoilers?</dt>
   <dd>no</dd>
 </dl>
-<h4>technical</h4>
+
+<h3>Technical</h3>
 <dl>
   <dt>are my posts securely encrypted?</dt>
   <dd>no, we just encode them so they're not readable until decoded (technical faq link)</dd>
@@ -22,3 +25,5 @@
   <dt>Are the flowers the messages?</dt>
   <dd>Look, you're overthinking it</dd>
 </dl>
+
+</div>

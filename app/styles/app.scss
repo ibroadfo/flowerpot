@@ -8,6 +8,14 @@
 $sanstwo: 'Fjalla One', sans-serif;
 $sans: 'Karla', sans-serif;
 
+
+  a {
+   color: #888; 
+    &:hover {
+     color: #aaa; 
+    }
+  }
+
 body{
   font-family: $sans; 
   color: #555;
@@ -19,6 +27,22 @@ header {
   padding: 3rem 0;
   margin-bottom: 2rem;
   text-align: center;
+}
+
+header.subpage {
+    text-align: left;
+   margin-bottom: 3rem;
+  border-bottom: 1px solid #DDD;
+   
+  h2 {
+    font-size: 1rem; 
+  }
+  .button {
+     margin-bottom: 0; 
+  }
+  #nav {
+    text-align: right;
+  }
 }
 
 h1, h2, h3, h4, h5 {
@@ -90,16 +114,10 @@ ul {
   }
 }
 
-label {
- text-transform: uppercase;
-}
-
 .warning-note {
   font-size: 0.9rem;
-  text-transform: uppercase;
   background: #C2474B;
   color: white;
-  font-weight: bold;
   border-radius: 1rem;
   padding: 0 0.5rem;
 }
@@ -141,11 +159,11 @@ label {
 
 #new-post-header{
   background-color:lightblue; 
-  font-weight: bold;
   padding: 1rem;
   display: block;
   margin-bottom: 1rem;
   color: white;
+  border-radius: 0.25rem;
 }
 
 #new-post-form {
@@ -154,6 +172,12 @@ label {
    }
   label {
    text-transform: none;
+  }
+}
+
+#abuse-report {
+  textarea {
+    width:100%;
   }
 }
 
@@ -173,4 +197,16 @@ footer {
 
 .full-post {
   white-space: pre-line;
+}
+
+dt {
+ text-decoration: underline;
+}
+
+#getting-started {
+   img {
+     display: block;
+     max-width: 100%;
+     margin: 1rem 0;
+   }
 }
