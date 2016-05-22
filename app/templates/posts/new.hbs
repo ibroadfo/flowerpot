@@ -1,9 +1,21 @@
 {{partial 'otherHeader'}}
 
 {{outlet}}
-<form>
-  <label>title: {{input class='title' value=model.title}} </label>
-  <label>warning note: {{input class='note' value=model.note}} </label>
-  <label>content: <br> {{textarea class='content' value=model.content}} </label>
-  <button class="submit button-primary" {{action 'submitTheThing' model}}>submit</button>
+<div class="row">
+  <div class="two columns"> </div>
+  <div class="eight columns">
+    <form id="new-post-form">
+  <label>Post Title:</label> 
+  {{input class='title' value=model.title}}
+  
+  <label>Warning note(s):</label> 
+  {{input class='note' value=model.note}}
+  
+  <label>Content:</label>
+  {{textarea class='content' value=model.content}} 
+  
+  <button class="submit button-primary" {{action 'submitTheThing' model}}>Create</button>
 </form>
+  </div>
+  <div class="two columns"></div>
+</div>
