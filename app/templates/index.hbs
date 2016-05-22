@@ -1,3 +1,26 @@
+<header>
+  <div class="container">
+    <div class="row">
+     <div class="column">
+      <h1>
+        {{#link-to "index"}}
+          Flowerpot
+        {{/link-to}}
+
+      </h1>
+      <h2>An app for safe content sharing.</h2>
+
+      {{link-to "Create New Post" 'posts.new' class="button create-new"}}
+      {{link-to "See an Example" 'post' 'example' class="button"}}
+      {{#if showIndex}}
+        {{link-to "list of posts (beta only)" "posts.index" class="button"}}
+      {{/if}}
+
+      </div>
+    </div>
+  </div>
+</header>
+
 <h3>What is this?</h3>
 
         <p>Flowerpot is an app which aims to help you share content with people while ensuring they've definitely been notified about any sensitive material in that content. For example:</p>

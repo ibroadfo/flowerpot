@@ -2,29 +2,6 @@
 This site is likely to contain upsetting content; please exercise caution and self-care as a priority. Please {{report-abuse model=model createReport="createReport"}} if you encounter it.
 </span>
 
-<header>
-  <div class="container">
-    <div class="row">
-     <div class="column">
-      <h1>
-        {{#link-to "index"}}
-          Flowerpot
-        {{/link-to}}
-        
-      </h1>
-      <h2>An app for safe content sharing.</h2>
-      
-      {{link-to "Create New Post" 'posts.new' class="button create-new"}}
-      {{link-to "See an Example" 'post' 'example' class="button"}}
-      {{#if showIndex}}
-        {{link-to "list of posts (beta only)" "posts.index" class="button"}}
-      {{/if}}
-      
-      </div>
-    </div>
-  </div>
-</header>
-
 <div class="container">
     <div class="row">
       <div class="column">
