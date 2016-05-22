@@ -1,5 +1,5 @@
 <span class="global-warning">
-This site is likely to contain content that you may want to avoid; please exercise caution and self-care as a priority.
+This site is likely to contain upsetting content; please exercise caution and self-care as a priority. Please {{report-abuse model=model createReport="createReport"}} if you encounter it.
 </span>
 
 <header>
@@ -14,7 +14,7 @@ This site is likely to contain content that you may want to avoid; please exerci
       </h1>
       <h2>An app for safe content sharing.</h2>
       
-      {{link-to "Create New Pot" 'posts.new' class="button create-new"}}
+      {{link-to "Create New Post" 'posts.new' class="button create-new"}}
       {{link-to "See an Example" 'post' 'example' class="button"}}
       {{#if showIndex}}
         {{link-to "list of posts (beta only)" "posts.index" class="button"}}
@@ -44,8 +44,8 @@ This site is likely to contain content that you may want to avoid; please exerci
            </div>
       <div class="one-half column">
 
-           <h4>Got a question? Want to help?</h4>
-           <p>Please do <a href="mailto:flowerpot@flowerpot.fyi">get in touch</a> if you have a question that's gone unanswered, or if you want to contribute but don't feel comfortable with Github. We'd love to hear from you!</p>
+           <h4>Questions? Abuse?</h4>
+           <p>Please do <a href="mailto:flowerpot@flowerpot.fyi">get in touch</a> if someone is misusing Flowerpot, if you have a question that's gone unanswered, or if you want to contribute but don't feel comfortable with Github. We're here to help.</p>
 
           <p> [ {{link-to 'admin' 'admin'}} ] </p>
       </div>

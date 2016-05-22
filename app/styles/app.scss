@@ -48,11 +48,20 @@ h2 {
 h3 {
  font-size: 1.25rem;
   margin-bottom: 1rem;
+  &.post-title {
+    margin-bottom: 0;
+  }
 }
 
 h4 {
  font-size: 1.125rem; 
   margin-bottom: 0;
+  &.warnings-title {
+   display: inline-block;
+   font-size: 1rem;
+    color: #888;
+    margin-bottom: 1rem;
+  }
 }
 
 h5 {
@@ -62,7 +71,7 @@ h5 {
 
 #psa { 
   background: #eee;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   border-radius: 0.5rem;
   h5 {  margin-bottom: 0;
     color: #C2474B;
@@ -85,8 +94,14 @@ label {
  text-transform: uppercase;
 }
 
-#note{
-  background-color: red;
+.warning-note {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  background: #C2474B;
+  color: white;
+  font-weight: bold;
+  border-radius: 1rem;
+  padding: 0 0.5rem;
 }
 
 .container{
@@ -107,12 +122,21 @@ label {
   }
 }
 
-.global-warning{
+.button.button-decode {
+ display: block;
+}
+
+.global-warning {
   color: white;
   display: block;
   text-align: center;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   background: #C2474B;
+  font-size: 0.8rem;
+  a {
+    font-size: 0.8rem;
+    color: white;
+  }
 }
 
 #new-post-header{
@@ -124,12 +148,25 @@ label {
   color: white;
 }
 
+#new-post-form {
+   input, textarea {
+     width: 100%;
+   }
+  label {
+   text-transform: none;
+  }
+}
+
 footer {
   background: #444;
   color: #eee;
   padding-top: 2rem;
-  margin-top: 1rem;
+  margin-top: 4rem;
   p {
    font-size: .925rem; 
   }
+}
+
+.report-abuse {
+   font-size: .925rem; 
 }
