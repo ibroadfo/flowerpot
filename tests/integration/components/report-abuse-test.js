@@ -11,5 +11,5 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{report-abuse}}`);
 
-  assert.equal(this.$('a:first').text().trim(), 'report abuse');
+  assert.equal(this.$('a:first').text().trim(), 'Report Abuse');
 });
