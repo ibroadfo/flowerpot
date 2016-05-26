@@ -1,9 +1,40 @@
-<p>
-  Hi, welcome to flowerpot. This is an app to help share posts with people while ensuring they've definitely been notified about any sensitive content.
-</p>
+<header>
+  <div class="container">
+    <div class="row">
+     <div class="column">
+      <h1>
+        {{#link-to "index"}}
+          Flowerpot
+        {{/link-to}}
 
-<p>For example, if someone wants to write a post about SUBJECT but is concerned that some of their friends have a phobia, they can provide a content note like 'mentions SUBJECT' and be confident that only people who've actively consented to read about that subject will see the content of their post.</p>
+      </h1>
+      <h2>An app for safe content sharing.</h2>
 
+      {{link-to "Create New Post" 'posts.new' class="button create-new"}}
+      {{link-to "See an Example" 'post' 'example' class="button"}}
+      {{#if showIndex}}
+        {{link-to "list of posts (beta only)" "posts.index" class="button"}}
+      {{/if}}
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<h3>What is this?</h3>
+
+        <p>Flowerpot is an app which aims to help you share content with people while ensuring they've definitely been notified about any sensitive material in that content. For example:</p>
+
+    <ul>
+      <li>Alex has written a blog post about SUBJECT A but is concerned that some of their friends have a phobia of that subject.</li>
+      <li>They encode that post using Flowerpot, and provide a content note like 'Be careful, this post mentions SUBJECT A!'</li>
+      <li>They share the post, which can be easily decoded by anyone who wishes to read it.</li>
+      <li>Alex is confident that those reading their post have consented to its content.</li>
+    </ul>
+
+<div id="psa">
+<h5>PSA:</h5>
 <p>
-  Please use flowerpot only for good, never for evil. Abusive content will be removed. We have a (hopefully) comprehensive {{link-to "Code of Conduct" "mdContent" "code-of-conduct"}} which all users are expected to follow.
+  <strong>Please</strong> use Flowerpot only for good, never for evil. Abusive content will be removed. We have a (hopefully) comprehensive {{link-to "Code of Conduct" "mdContent" "code-of-conduct"}} which all users are expected to follow &mdash; and please do get in touch if you have any questions, comments, concerns, or contributions.
 </p>
+</div>

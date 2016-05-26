@@ -1,7 +1,24 @@
+{{partial 'otherHeader'}}
+
 {{outlet}}
-<form>
-  <label>title: {{input class='title' value=model.title}} </label>
-  <label>warning note: {{input class='note' value=model.note}} </label>
-  <label>content: <br> {{textarea class='content' value=model.content}} </label>
-  <button class="submit button-primary" {{action 'submitTheThing' model}}>submit</button>
+<div class="row">
+  <div class="two columns"> </div>
+  <div class="eight columns"> 
+  <h3>Create New Post</h3>
+  <p>When you create a Flowerpot post, you're encoding potentially upsetting content, making sure that those potentially upset by the content won't read it by accident. You provide a warning next to it, and readers consent to reading by clicking the 'Decode' button on your post! Please keep your title neutral.</p>
+   
+    <form id="new-post-form">
+  <label>Post Title:</label>
+  {{input class='title' value=model.title}}
+  
+  <label>Warning note:</label> 
+  {{input class='note' value=model.note}}
+  
+  <label>Content:</label>
+  {{textarea class='content' value=model.content}} 
+  
+  <button class="submit button create-new" {{action 'submitTheThing' model}}>Create</button>
 </form>
+  </div>
+  <div class="two columns"></div>
+</div>

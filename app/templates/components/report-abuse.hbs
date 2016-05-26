@@ -1,3 +1,9 @@
-{{#ember-remodal openLink='report abuse' onConfirm='submitReport' confirmButton='send report'}}
-  <label>extra context if required {{input value=extraContext}}</label>
+{{#ember-remodal openLink='Report Abuse' onConfirm='submitReport' confirmButton='send report'}}
+  <div id="abuse-report">
+  <h3>Abusive Post</h3>
+  <p>We're sorry someone is abusing Flowerpot, and thanks for reporting it. We will deal with all abuse reports ASAP.</p>
+  
+  <label>Anything else you'd like us to know about this post?</label>
+  {{textarea value=extraContext}}
+  </div>
 {{/ember-remodal}}

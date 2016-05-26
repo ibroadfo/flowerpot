@@ -1,9 +1,21 @@
-{{#if reportSubmitted}}
+<div class="column">
+ <div class="row">
+  {{#if reportSubmitted}}
   Thank you for submitting your report.
 {{else}}
-  <p id='title'>{{model.title}} ({{report-abuse model=model createReport="createReport"}})</p>
-  <p>This post has the following content note attached, please only proceed with decoding if you're ok with this</p>
-  <p><span id='note'>{{model.note}}</span></p>
-  <button class="button-primary" id='decode' {{action 'decodeMe'}} disabled={{isDecoded}}>Decode the content please</button>
-  <p id='post'>{{{visibleContent}}}</p>
+ 
+   
+  <div class="two columns"> </div>
+  <div class="eight columns">
+    <h3 class="post-title">{{model.title}} <span class='warning-note'>{{model.note}}</span></h3>
+  <p>{{report-abuse model=model createReport="createReport"}}</p>
+ 
+    
+      <button class="button button-decode" {{action 'decodeMe'}} disabled={{isDecoded}}>Decode Content</button>
+
+      <article class='full-post'>{{{visibleContent}}}</article>
+  </div>
+  
 {{/if}}
+  </div>
+</div>

@@ -5,4 +5,5 @@ export default function(server) {
 
   // server.createList('contact', 10);
   server.createList('post', 10);
+  server.createList('abuse-report', 5);
 }
