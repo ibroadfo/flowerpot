@@ -16,6 +16,9 @@ $sans: 'Karla', sans-serif;
     }
   }
 
+.post-route header{display: none;}
+.post-route footer{display: none;}
+
 body{
   font-family: $sans;
   color: #555;
