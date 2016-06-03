@@ -4,6 +4,8 @@ Flowerpot is a post-sharing app (think pastie) with explicit content notes; the 
 
 The main public instance of Flowerpot is at {link}; this page is for people who want to contribute to the development of the app. If you're new to software development, have a look at our [getting started guide](markdown/getting-started.md).
 
+Please note our [code of conduct](markdown/code-of-conduct.md).
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
