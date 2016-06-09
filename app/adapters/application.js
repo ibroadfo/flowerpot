@@ -5,7 +5,7 @@ import ActiveModelAdapter from 'active-model-adapter';
 
 let adapt;
 
-if(config.APP.useFireBase) {
+if(config.featureFlags['use-firebase']) {
   const { inject } = Ember;
 
   adapt = FirebaseAdapter.extend({
