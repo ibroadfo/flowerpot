@@ -2,7 +2,7 @@
 
 Flowerpot is a post-sharing app (think pastie) with explicit content notes; the author of a post can have complete confidence that the reader has definitely read and agreed to the note before reading the content of the post.
 
-The main public instance of Flowerpot is at {link}; this page is for people who want to contribute to the development of the app. If you're new to software development, have a look at our [getting started guide](markdown/getting-started.md).
+The main public instance of Flowerpot is at <http://flowerpot.fyi>; this page is for people who want to contribute to the development of the app. If you're new to software development, have a look at our [getting started guide](markdown/getting-started.md).
 
 Please note our [code of conduct](markdown/code-of-conduct.md).
 
