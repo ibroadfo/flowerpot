@@ -18,7 +18,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone https://github.com/ibroadfo/flowerpot` this repository
+* `git clone https://github.com/ibroadfo/flowerpot`
 * change into the new directory
 * `npm install`
 * `bower install`
