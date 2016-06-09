@@ -10,5 +10,8 @@
       <div class="six columns" id="nav">
         {{link-to "Create New Post" 'posts.new' class="button create-new"}}
         {{link-to "See an Example" 'post' 'example' class="button"}}
+        {{#if features.showIndex}}
+          {{link-to "list of posts (beta only)" "posts.index" class="button"}}
+        {{/if}}
       </div>
 </header>

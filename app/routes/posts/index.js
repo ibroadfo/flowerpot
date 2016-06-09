@@ -1,9 +1,8 @@
 import Ember from 'ember';
-import config from '../../config/environment';
 
 export default Ember.Route.extend({
   beforeModel() {
-    if( ! config.APP.showIndex ) {
+    if (!this.features.isEnabled('show-index')){
       this.transitionTo('/');
     }
   },

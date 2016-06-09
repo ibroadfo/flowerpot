@@ -18,9 +18,11 @@ module.exports = function(environment) {
       }
     },
 
-    APP: {
-      showIndex: true,
-      useFireBase: false,
+    APP: {},
+
+    featureFlags: {
+      'show-index': true,
+      'use-firebase': false,
       // Here you can pass flags/options to your application instance
       // when it is created
     }
@@ -44,11 +46,13 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
+    ENV.featureFlags['show-index'] = false;
+
   }
 
   if (environment === 'production') {
-    ENV.APP.showIndex = true;
-    ENV.APP.useFireBase = true;
+    ENV.featureFlags['show-index'] = true;
+    ENV.featureFlags['use-firebase'] = true;
   }
 
   return ENV;

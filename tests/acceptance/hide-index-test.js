@@ -1,10 +1,11 @@
 import { test } from 'qunit';
 import moduleForAcceptance from 'flowerpot/tests/helpers/module-for-acceptance';
-import config from '../../config/environment';
+import 'flowerpot/tests/helpers/with-feature';
 
 moduleForAcceptance('Acceptance | hide index');
 
 test('the list of posts should be visible', function(assert) {
+  withFeature('showIndex');
   visit('/posts');
 
   andThen(function() {
@@ -13,7 +14,6 @@ test('the list of posts should be visible', function(assert) {
 });
 
 test('the list of posts should be invisible', function(assert) {
-  config.APP.showIndex = false;
   visit('/posts');
 
   andThen(function() {
