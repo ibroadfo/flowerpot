@@ -1,7 +1,7 @@
 import Ember from 'ember';
 import config from '../config/environment';
 import FirebaseAdapter from 'emberfire/adapters/firebase';
-import ActiveModelAdapter from 'active-model-adapter';
+import DS from 'ember-data';
 
 let adapt;
 
@@ -13,7 +13,7 @@ if(config.featureFlags['use-firebase']) {
   });
 }
 else {
-  adapt = ActiveModelAdapter.extend();
+  adapt = DS.JSONAPIAdapter.extend();
 }
 
 export default adapt;
