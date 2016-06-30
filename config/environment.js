@@ -5,7 +5,12 @@ module.exports = function(environment) {
     modulePrefix: 'flowerpot',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://' + process.env.FIREBASE_APP_NAME + '.firebaseio.com',
+    firebase: {
+      apiKey: "AIzaSyBo3TA9B7AsEpIODCyLc-cMS3nxVcV1pr4",
+      authDomain:  process.env.FIREBASE_APP_NAME + ".firebaseapp.com",
+      databaseURL: "https://" + process.env.FIREBASE_APP_NAME + ".firebaseio.com",
+      storageBucket:  process.env.FIREBASE_APP_NAME + ".appspot.com",
+    },
     torii: {
       sessionServiceName: 'session'
     },

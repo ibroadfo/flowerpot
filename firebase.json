@@ -1,14 +1,19 @@
 {
-  "firebase": "",
-  "public": "dist",
-  "rules": "rules.bolt",
-  "ignore": [
-    "firebase.json",
-    "**/.*",
-    "**/node_modules/**"
-  ],
-  "rewrites": [{
-    "source": "**",
-    "destination": "/index.html"
-  }]
+  "database": {
+    "rules": "rules.bolt"
+  },
+  "hosting": {
+    "public": "dist",
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
 }

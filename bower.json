@@ -9,7 +9,7 @@
     "lodash": "~3.7.0",
     "Faker": "~3.1.0",
     "jquery.rot13": "^1.0.0",
-    "firebase": "^2.1.0",
+    "firebase": "^3.0.0",
     "skeleton-framework": "^1.0.8",
     "normalize-css": "normalize.css#^3.0.3",
     "es5-shim": "^4.0.5",

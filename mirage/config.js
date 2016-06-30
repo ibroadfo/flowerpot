@@ -5,6 +5,9 @@ this.post('/posts');
 this.get('/abuse-reports', 'abuse-report');
 this.post('/abuse-reports', 'abuse-report');
 
+this.passthrough('https://www.googleapis.com/identitytoolkit/v3/relyingparty/**');
+
+
   // These comments are here to help you get started. Feel free to delete them.
 
   /*
