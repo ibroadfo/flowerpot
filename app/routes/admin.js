@@ -1,10 +1,8 @@
 import Ember from 'ember';
-import config from '../config/environment';
-
 
 export default Ember.Route.extend({
   model() {
-    if (this.get('session.isAuthenticated') || config.environment === 'development') {
+    if (this.get('session.isAuthenticated') || !this.features.isEnabled('use-firebase')) {
       return this.store.findAll('abuseReport');
     }
     else {
