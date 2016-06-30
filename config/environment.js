@@ -47,7 +47,7 @@ module.exports = function(environment) {
 
     ENV.APP.rootElement = '#ember-testing';
     ENV.featureFlags['show-index'] = false;
-
+    ENV.featureFlags['use-firebase'] = false;
   }
 
   if (environment === 'production') {
