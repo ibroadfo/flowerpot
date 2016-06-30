@@ -51,8 +51,8 @@
     "ember-moment": "6.1.0",
     "ember-remodal": "^1.1.0",
     "ember-resolver": "^2.0.3",
-    "emberfire": "1.6.6",
     "ember-welcome-page": "^1.0.1",
+    "emberfire": "1.6.6",
     "loader.js": "^4.0.1",
     "torii": "0.8.0"
   }
