@@ -10,6 +10,11 @@ export default Ember.Route.extend({
     }
   },
   actions: {
+    whitelist(report) {
+      report.set('whitelisted', true);
+      report.get('post').set('whitelisted', true);
+      report.get('post.content').save();
+    },
     error(error, transition) {
       transition = transition; // jshint, i love you but you're bringing me down
       if (error) {

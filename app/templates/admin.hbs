@@ -12,9 +12,12 @@
 <table>
   <thead><th>abuse context</th><th>post title</th><th>report timestamp</th></thead>
   <tbody>
-    {{#each model as |foo|}}
-      <tr><td>{{foo.extraContext}}</td> <td>{{#link-to 'post' foo.post}}{{foo.post.title}}{{/link-to}}</td>
-<td>{{moment-format foo.timestamp}}</td>
+    {{#each unreviewedReports as |foo|}}
+      <tr>
+        <td>{{foo.extraContext}}</td>
+        <td>{{#link-to 'post' foo.post}}{{foo.post.title}}{{/link-to}}
+          <button {{action "whitelist" foo}} class='button-whitelist'>whitelist this post</button></td>
+        <td>{{moment-format foo.timestamp}}</td>
       </tr>
     {{/each}}
   </tbody>

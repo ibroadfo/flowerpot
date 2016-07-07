@@ -2,6 +2,8 @@ export default function() {
 this.get('/posts');
 this.get('/posts/:id');
 this.post('/posts');
+this.patch('/posts/:id');
+
 this.get('/abuse-reports', 'abuse-report');
 this.post('/abuse-reports', 'abuse-report');
 

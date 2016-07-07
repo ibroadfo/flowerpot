@@ -15,6 +15,7 @@ export default DS.Model.extend({
   encodedContent: DS.attr(),
   title: DS.attr(),
   note: DS.attr(),
-  timestamp: DS.attr('number')
+  timestamp: DS.attr('number'),
+  whitelisted: DS.attr('boolean', { default:false })
 
 });

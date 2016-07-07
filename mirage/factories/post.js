@@ -6,7 +6,7 @@ export default Mirage.Factory.extend({
 
   encodedContent() { return $.rot13(faker.lorem.paragraph()); },
   title() { return faker.company.catchPhrase(); },
-  note() { return faker.lorem.words(); }
-
+  note() { return faker.lorem.words(); },
+  whitelisted: false
 
 });
