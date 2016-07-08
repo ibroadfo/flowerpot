@@ -3,19 +3,21 @@
   {{#if reportSubmitted}}
   Thank you for submitting your report.
 {{else}}
- 
-   
+
+
   <div class="two columns"> </div>
   <div class="eight columns">
     <h3 class="post-title">{{model.title}} <span class='warning-note'>{{model.note}}</span></h3>
   <p>{{report-abuse model=model createReport="createReport"}}</p>
- 
-    
-      <button class="button button-decode" {{action 'decodeMe'}} disabled={{isDecoded}}>Decode Content</button>
 
-      <article class='full-post'>{{{visibleContent}}}</article>
+    <div class="post-box">
+      <article class='full-post' style='position:absolute'>{{{visibleContent}}}</article>
+      <div class="hiding-layer" style="position:absolute;width:100%;background-color:red;opacity:0.7">
+        <button class="button button-decode" {{action 'decodeMe'}} disabled={{isDecoded}} style="color:black">Decode Content</button>
+      </div>
+    </div>
   </div>
-  
+
 {{/if}}
   </div>
 </div>
