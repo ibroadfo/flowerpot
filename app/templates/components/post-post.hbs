@@ -1,21 +1,24 @@
-<div class="column">
- <div class="row">
+<div class="row full-post">
   {{#if reportSubmitted}}
-  Thank you for submitting your report.
-{{else}}
- 
+    Thank you for submitting your report.
+  {{else}}
    
-  <div class="two columns"> </div>
-  <div class="eight columns">
-    <h3 class="post-title">{{model.title}} <span class='warning-note'>{{model.note}}</span></h3>
-  <p>{{report-abuse model=model createReport="createReport"}}</p>
- 
-    
-      <button class="button button-decode" {{action 'decodeMe'}} disabled={{isDecoded}}>Decode Content</button>
+    <div class="two columns"></div>
+    <div class="eight columns">
+      {{#link-to "index" class="home-link button"}}
+        &lt; FLOWERPOT
+      {{/link-to}}
+      
+      <h3 class="post-title">{{model.title}}</h3>
 
-      <article class='full-post'>{{{visibleContent}}}</article>
-  </div>
-  
-{{/if}}
-  </div>
+      <span>Warning notes:</span>
+      <label class='warning-note'>{{model.note}}</label>
+      <p>{{report-abuse model=model createReport="createReport"}}</p>
+
+      <button class="button button-decode button-primary" {{action 'decodeMe'}} disabled={{isDecoded}}>Decode Content</button>
+
+      <article class='post-content'>{{{visibleContent}}}</article>
+    </div>
+
+  {{/if}}
 </div>
