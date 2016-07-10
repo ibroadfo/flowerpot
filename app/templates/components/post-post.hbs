@@ -2,16 +2,15 @@
   {{#if reportSubmitted}}
     Thank you for submitting your report.
   {{else}}
-   
+
     <div class="two columns"></div>
     <div class="eight columns">
       {{#link-to "index" class="home-link button"}}
         &lt; FLOWERPOT
       {{/link-to}}
-      
+
       <h3 class="post-title">{{model.title}}</h3>
 
-      <span>Warning notes:</span>
       <label class='warning-note'>{{model.note}}</label>
       <p>{{report-abuse model=model createReport="createReport"}}</p>
 

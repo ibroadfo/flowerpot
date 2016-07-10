@@ -37,7 +37,7 @@ header {
   text-align: center;
 }
 
-.alert { 
+.alert {
   border: none;
   margin-bottom: 0;
 }
@@ -87,7 +87,7 @@ h3 {
   margin-bottom: 1rem;
   &.post-title {
     margin-top: 1rem;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -128,15 +128,11 @@ ul {
   }
 }
 
-span.warning-note {
-  
-}
-
 .warning-note {
   font-size: 0.9rem;
   background: #C2474B;
   color: white;
-  border-radius: 1rem;
+  border-radius: 4px;
   padding: 0 0.5rem;
   display: inline-block;
 }
