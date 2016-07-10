@@ -91,6 +91,16 @@ h3 {
   }
 }
 
+article {
+  .header {
+    text-align: center;
+    margin-bottom: 1rem;
+    span {
+      font-size: 0.8rem;
+    }
+  }
+}
+
 h4 {
  font-size: 1.125rem;
   margin-bottom: 0;
@@ -129,12 +139,14 @@ ul {
 }
 
 .warning-note {
-  font-size: 0.9rem;
-  background: #C2474B;
-  color: white;
+  border: 1px solid #C2474B; text-align: center; padding: 1rem;
   border-radius: 4px;
-  padding: 0 0.5rem;
-  display: inline-block;
+  label {
+    font-size: 0.9rem;
+    border-radius: 4px;
+    padding: 0 0.5rem;
+    display: inline-block;
+  }
 }
 
 .container{
@@ -157,6 +169,7 @@ ul {
 
 .button.button-decode {
  display: block;
+ margin: 0 auto;
 }
 
 .global-warning {
@@ -187,6 +200,12 @@ ul {
    }
   label {
    text-transform: none;
+    span {
+      font-weight: normal;
+    }
+  }
+  textarea.content {
+    min-height: 200px;
   }
 }
 

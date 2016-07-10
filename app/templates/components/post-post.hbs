@@ -9,14 +9,20 @@
         &lt; FLOWERPOT
       {{/link-to}}
 
-      <h3 class="post-title">{{model.title}}</h3>
+      <article>
+        <div class="header">
+          <h3 class="post-title">{{model.title}}</h3>
+          <span class="report-post-abuse">{{report-abuse model=model createReport="createReport"}}</span>
+        </div>
 
-      <label class='warning-note'>{{model.note}}</label>
-      <p>{{report-abuse model=model createReport="createReport"}}</p>
 
-      <button class="button button-decode button-primary" {{action 'decodeMe'}} disabled={{isDecoded}}>Decode Content</button>
+        <div class="warning-note">
+          <label>{{model.note}}</label>
+          <button class="button button-decode button-primary" {{action 'decodeMe'}} disabled={{isDecoded}}>Display Content</button>
+        </div>
 
-      <article class='post-content'>{{{visibleContent}}}</article>
+        <div class='post-content' style='display:none'>{{{visibleContent}}}</div>
+      </article>
     </div>
 
   {{/if}}
