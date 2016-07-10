@@ -11,8 +11,8 @@ test('talking about my fears', function(assert) {
 
   andThen(function() {
     assert.equal(currentURL(), '/posts/1');
-    assert.equal($('.full-post').length, 1);
-    assert.equal($('.full-post:contains("mice")').length, 0);
-    assert.equal($('.full-post:contains("zvpr")').length, 1);
+    assert.equal($('.post-content').length, 1);
+    assert.equal($('.post-content:contains("mice")').length, 0);
+    assert.equal($('.post-content:contains("zvpr")').length, 1);
   });
 });
