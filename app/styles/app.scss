@@ -200,6 +200,12 @@ ul {
    }
   label {
    text-transform: none;
+    span {
+      font-weight: normal;
+    }
+  }
+  textarea.content {
+    min-height: 200px;
   }
 }
 
