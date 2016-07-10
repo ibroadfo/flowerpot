@@ -17,7 +17,10 @@
 
 
         <div class="warning-note">
-          <label>{{model.note}}</label>
+          <label>Content note:</label>
+          <p>
+            {{model.note}}
+          </p>
           <button class="button button-decode button-primary" {{action 'decodeMe'}} disabled={{isDecoded}}>Display Content</button>
         </div>
 
