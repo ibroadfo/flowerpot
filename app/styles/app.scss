@@ -139,14 +139,15 @@ ul {
 }
 
 .warning-note {
-  border: 1px solid #C2474B; text-align: center; padding: 1rem;
+  border: 1px solid #C2474B;
+  text-align: center;
+  padding: 1rem;
   border-radius: 4px;
-  label {
     font-size: 0.9rem;
     border-radius: 4px;
-    padding: 0 0.5rem;
-    display: inline-block;
-  }
+    label {
+      margin-bottom: 0;
+    }
 }
 
 .container{
