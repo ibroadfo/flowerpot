@@ -6,7 +6,7 @@ module.exports = function(environment) {
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
     firebase: {
-      apiKey: "AIzaSyBo3TA9B7AsEpIODCyLc-cMS3nxVcV1pr4",
+      apiKey: process.env.FIREBASE_API_KEY,
       authDomain:  process.env.FIREBASE_APP_NAME + ".firebaseapp.com",
       databaseURL: "https://" + process.env.FIREBASE_APP_NAME + ".firebaseio.com",
       storageBucket:  process.env.FIREBASE_APP_NAME + ".appspot.com",
