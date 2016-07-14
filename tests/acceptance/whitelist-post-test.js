@@ -3,8 +3,8 @@ import moduleForAcceptance from 'flowerpot/tests/helpers/module-for-acceptance';
 
 moduleForAcceptance('Acceptance | whitelist post');
 
-test('false rabbit reports', function(assert) {
-  server.create('post', {title:'A post about my rabbit', encodedContent:'zl enoovg ybirf nysnysn'});
+test('false abuse reports', function(assert) {
+  server.create('post', {title:'A post about my birthday', encodedContent:'abguvat nohfvir'}); // nothing abusive
   server.createList('abuseReport', 50);
 
   visit('/admin');

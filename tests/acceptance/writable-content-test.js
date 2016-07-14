@@ -5,14 +5,14 @@ moduleForAcceptance('Acceptance | writable content');
 
 test('talking about my fears', function(assert) {
   visit('/posts/new');
-  fillIn('input.title', 'preteen rodent trauma');
-  fillIn('textarea.content', 'a long post about mice');
+  fillIn('input.title', 'a specific phobia');
+  fillIn('textarea.content', 'a long post about my common phobia');
   click('button.submit');
 
   andThen(function() {
     assert.equal(currentURL(), '/posts/1');
     assert.equal($('.post-content').length, 1);
-    assert.equal($('.post-content:contains("mice")').length, 0);
-    assert.equal($('.post-content:contains("zvpr")').length, 1);
+    assert.equal($('.post-content:contains("phobia")').length, 0);
+    assert.equal($('.post-content:contains("cubovn")').length, 1);
   });
 });
