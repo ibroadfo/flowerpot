@@ -15,7 +15,8 @@ type Post {
   encodedContent: String,
   note: String,
   title: String,
-  timestamp: Number
+  timestamp: Number,
+  whitelisted: Boolean
 }
 
 path /abuseReports/{abuseReportid} is AbuseReport {
