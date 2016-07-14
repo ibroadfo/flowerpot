@@ -5,12 +5,6 @@ module.exports = function(environment) {
     modulePrefix: 'flowerpot',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: {
-      apiKey: process.env.FIREBASE_API_KEY,
-      authDomain:  process.env.FIREBASE_APP_NAME + ".firebaseapp.com",
-      databaseURL: "https://" + process.env.FIREBASE_APP_NAME + ".firebaseio.com",
-      storageBucket:  process.env.FIREBASE_APP_NAME + ".appspot.com",
-    },
     torii: {
       sessionServiceName: 'session'
     },
@@ -58,6 +52,15 @@ module.exports = function(environment) {
   if (environment === 'production') {
     ENV.featureFlags['show-index'] = true;
     ENV.featureFlags['use-firebase'] = true;
+  }
+
+  if (ENV.featureFlags['use-firebase']) {
+    ENV.firebase = {
+      apiKey: process.env.FIREBASE_API_KEY,
+      authDomain:  process.env.FIREBASE_APP_NAME + ".firebaseapp.com",
+      databaseURL: "https://" + process.env.FIREBASE_APP_NAME + ".firebaseio.com",
+      storageBucket:  process.env.FIREBASE_APP_NAME + ".appspot.com",
+    };
   }
 
   return ENV;
