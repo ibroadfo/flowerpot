@@ -249,3 +249,14 @@ dt {
      margin: 1rem 0;
    }
 }
+
+.faq {
+  dt {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  dd {
+    margin-bottom: 1rem;
+    margin-left: 0;
+  }
+}
