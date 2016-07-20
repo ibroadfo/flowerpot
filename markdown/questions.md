@@ -26,6 +26,9 @@
     <dt>What do I do with a new post once I've created it!</dt>
     <dd>When your encoded post is created, just copy the link&emdash; you can then share however you like.</dd>
 
+    <dt>Can I edit or delete a post?</dt>
+    <dd>No, you can't do either of these things. We didn't want to track account info (or any data about our users), which means that things like editing and deleting are tricky. You can always create a new Flowerpot post if you've made a mistake, or if you really want to delete the one you've made, <a href="mailto:flowerpot@flowerpot.fyi">send us an email</a> with the post link and a request to delete.</dd>
+
     <dt>How do I write a good warning note?</dt>
     <dd>Good question! It depends on the audience of your post, and its content. A good guideline is to try and give a general, broad idea of what your post is about, but without giving too many details. You want your readers to understand the potentially upsetting topics you discuss, but without offering too much details. It's hard, but not impossible. The Geek Feminism Wiki has some great guidance <a href="http://geekfeminism.wikia.com/wiki/Trigger_warning" target="_blank">here</a>. Some examples:
       <ul>
