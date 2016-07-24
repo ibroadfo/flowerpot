@@ -1,6 +1,7 @@
 import Ember from 'ember';
+import ResetScrollMixin from 'ember-cli-reset-scroll';
 
-export default Ember.Route.extend({
+export default Ember.Route.extend(ResetScrollMixin, {
   beforeModel: function() {
     return this.get("session").fetch().catch(function() {});
   },
