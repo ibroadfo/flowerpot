@@ -3,13 +3,6 @@
 
 <h3>FAQ</h3>
 
-  <ul>
-    <li><a href="mdContent/questions/#general">General</a></li> <!-- this needs fixed, I know -->
-    <li><a href="mdContent/questions/#technical-questions">Technical</a></li>
-  </ul>
-
-  <h4 id="general">General</h4>
-
   <dl>
     <dt>What is Flowerpot?</dt>
     <dd>Flowerpot is an app which aims to let people share content of any kind (especially sensitive content) while ensuring readers consent to reading it.</dd>
@@ -43,10 +36,7 @@
 
     <dt>Why 'Flowerpot'?</dt>
     <dd>Just because. It was a work-in-progress name, and it stuck!</dd>
-  </dl>
 
-<h4 id="technical-questions">Technical</h4>
-<dl>
   <dt>Are my posts securely encrypted?</dt>
   <dd>No, they're not. The posts are just <a href="https://en.wikipedia.org/wiki/ROT13" target="_blank">ROT13</a>'d to encode them, not securely encrypt.</dd>
   <dt>Why aren't you securely encrypting posts?</dt>
