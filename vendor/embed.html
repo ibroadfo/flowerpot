@@ -1,0 +1,66 @@
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-database.js"></script>
+  <script async src="https://cdn.rawgit.com/kadamwhite/jquery.rot13/dff39d20ddb37689840d2a2e604d38133747b4c0/dist/jquery.rot13.min.js"></script>
+
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "transformEmbedApiKey",
+      authDomain:  "transformEmbedAppName" + ".firebaseapp.com",
+      databaseURL: "https://" + "transformEmbedAppName" + ".firebaseio.com",
+      storageBucket:  "transformEmbedAppName" + ".appspot.com",
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <script>
+    // http://stackoverflow.com/a/901144
+    function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+  </script>
+
+  <link rel="stylesheet" href="assets/flowerpot.css">
+</head>
+
+<body>
+  <article>
+    <div class="header">
+      <h3 class="post-title">Loading…</h3>
+    </div>
+
+    <div class="warning-note">
+      <label>Content note:</label>
+      <p>
+        Loading…
+      </p>
+      <button class="button button-decode button-primary">Display Content</button>
+    </div>
+
+    <div class='post-content' style='display:none'>Loading…</div>
+  </article>
+
+  <script>
+    var postId = getParameterByName('postId');
+    firebase.database().ref('/posts/' + postId).once('value').then(function(snapshot) {
+      console.log(snapshot.val());
+      $('.post-title').html(snapshot.val().title)
+      $('.warning-note p').html(snapshot.val().note)
+      $('button').click(function() {
+        $('.post-content').html($.rot13(snapshot.val().encodedContent));
+        $('.post-content').toggle();
+        $('.warning-note').toggle();
+      })
+    });
+  </script>
+</body>
+</html>

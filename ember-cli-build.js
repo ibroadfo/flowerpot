@@ -10,6 +10,18 @@ module.exports = function(defaults) {
         'bower_components/skeleton-framework/dist',
         'bower_components/normalize-css'
       ]
+    },
+    transforms: {
+      targets: [
+        {
+          pattern: 'embed.html',
+          transform: (content) => content.replace(/transformEmbedApiKey/g, process.env.FIREBASE_EMBED_API_KEY)
+        },
+        {
+          pattern: 'embed.html',
+          transform: (content) => content.replace(/transformEmbedAppName/g, process.env.FIREBASE_APP_NAME)
+        }
+      ]
     }
   });
 
@@ -28,6 +40,8 @@ module.exports = function(defaults) {
 
   app.import('bower_components/jquery.rot13/dist/jquery.rot13.js');
   app.import('bower_components/autolink/autolink-min.js');
+  app.import('vendor/embed.html', {destDir: ''});
+
 
   return app.toTree();
 };
