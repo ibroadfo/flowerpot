@@ -59,7 +59,7 @@
       $('button').click(function() {
         $('.post-content').html($.rot13(snapshot.val().encodedContent).autoLink({ target: "_blank", rel: "nofollow"}));
         $('.post-content').toggle();
-        $('.warning-note').toggle();
+        $('.button-decode').toggle();
       })
     });
   </script>

@@ -10,7 +10,7 @@ export default Ember.Component.extend({
         target: "_blank", rel: "nofollow"}
       ));
       this.$('.post-content').toggle();
-      this.$('.warning-note').toggle();
+      this.$('.button-decode').toggle();
       this.set('isDecoded', true);
     },
     createReport(props) {
