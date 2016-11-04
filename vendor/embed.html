@@ -58,8 +58,8 @@
       $('.warning-note p').html(snapshot.val().note)
       $('button').click(function() {
         $('.post-content').html($.rot13(snapshot.val().encodedContent).autoLink({ target: "_blank", rel: "nofollow"}));
-        $('.post-content').toggle();
-        $('.button-decode').toggle();
+        $('.post-content').show();
+        $('.button-decode').hide();
       })
     });
   </script>

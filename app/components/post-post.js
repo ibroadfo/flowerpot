@@ -9,8 +9,8 @@ export default Ember.Component.extend({
       this.set('visibleContent', this.get('rottenCoder').decode(this.get('model.encodedContent')).autoLink({
         target: "_blank", rel: "nofollow"}
       ));
-      this.$('.post-content').toggle();
-      this.$('.button-decode').toggle();
+      this.$('.post-content').show();
+      this.$('.button-decode').hide();
       this.set('isDecoded', true);
     },
     createReport(props) {
