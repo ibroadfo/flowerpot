@@ -6,9 +6,10 @@ export default Ember.Component.extend({
   visibleContent: Ember.computed.oneWay('model.encodedContent'),
   actions: {
     decodeMe() {
-      this.set('visibleContent', this.get('rottenCoder').decode(this.get('model.encodedContent')).autoLink({
+      var decodedContent = this.get('rottenCoder').decode(this.get('model.encodedContent')).autoLink({
         target: "_blank", rel: "nofollow"}
-      ));
+      );
+      this.set('visibleContent', decodedContent);
       this.$('.post-content').show();
       this.$('.button-decode').hide();
       this.set('isDecoded', true);
