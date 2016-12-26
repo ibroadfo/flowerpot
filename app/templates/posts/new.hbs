@@ -14,15 +14,15 @@
     on your post! Please keep your title neutral.</p>
 
     <form id="new-post-form">
-  <label>Post Title:</label>
-  {{input class='title' value=model.title}}
+  <label>Post Title:
+  {{input class='title' value=model.title}}</label>
 
   <label>Warning: <span>(be specific, so that readers know why
-    the content is potentially upsetting)</span></label>
-  {{textarea class='note' value=model.note}}
+    the content is potentially upsetting)</span>
+  {{textarea class='note' value=model.note}}</label>
 
-  <label>Content:</label>
-  {{textarea class='content' value=model.content}}
+  <label>Content:
+  {{textarea class='content' value=model.content}}</label>
 
   <button class="submit button create-new" {{action 'submitTheThing' model}}>Create</button>
 </form>
