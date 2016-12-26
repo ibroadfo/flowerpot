@@ -50,7 +50,7 @@ We're hosting on firebase and deploying with [ember-cli-deploy-firebase](https:/
 
 Any normal ember-cli deploy [method](http://ember-cli.com/user-guide/#deployments) should work though!
 
-You can set `use-firebase` to false in config/environment.js if you're not using firebase as your backend.
+You can set `use-firebase` to `false` in `config/environment.js` if you're not using firebase as your backend.
 
 ## Further Reading / Useful Links
 
