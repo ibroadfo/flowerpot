@@ -12,11 +12,11 @@ Please note our [code of conduct](markdown/code-of-conduct.md).
 
 You will need the following things properly installed on your computer.
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://www.ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+* [Git](https://git-scm.com/)
+* [Node.js](https://nodejs.org/) (with NPM)
+* [Bower](https://bower.io/)
+* [Ember CLI](https://www.ember-cli.com/)
+* [PhantomJS](https://phantomjs.org/)
 
 ## Installation
 
@@ -48,14 +48,14 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 We're hosting on firebase and deploying with [ember-cli-deploy-firebase](https://github.com/ibroadfo/ember-cli-deploy-firebase); you can use your own firebase app by setting `fireBaseAppName` in `config/deploy.js`.
 
-Any normal ember-cli deploy [method](http://ember-cli.com/user-guide/#deployments) should work though!
+Any normal ember-cli deploy [method](https://ember-cli.com/user-guide/#deployments) should work though!
 
 You can set `use-firebase` to `false` in `config/environment.js` if you're not using firebase as your backend.
 
 ## Further Reading / Useful Links
 
 * [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
+* [ember-cli](https://www.ember-cli.com/)
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
