@@ -1,4 +1,5 @@
 {{partial 'otherHeader'}}
+<main role="main">
 {{outlet}}
 <p id='note'>this public list of items is just for testing/development!</p>
 <ul>
@@ -6,3 +7,4 @@
     <li>{{#link-to 'post' post}}{{post.title}}{{/link-to}}</li>
   {{/each}}
 </ul>
+</main>

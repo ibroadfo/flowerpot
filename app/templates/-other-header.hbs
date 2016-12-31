@@ -1,4 +1,4 @@
-<header class="subpage">
+<header class="subpage" role="banner">
      <div class="six columns">
       <h1>
         {{#link-to "index"}}
@@ -7,7 +7,7 @@
       </h1>
       <h2>An app for safe content sharing</h2>
      </div>
-      <div class="six columns" id="nav">
+      <div class="six columns" id="nav" role="navigation">
         {{link-to "Create New Post" 'posts.new' class="button create-new"}}
         {{link-to "See an Example" 'post' 'example' class="button"}}
         {{#if features.showIndex}}
