@@ -45,6 +45,7 @@
     "ember-export-application-global": "^1.0.5",
     "ember-feature-flags": "3.0.0",
     "ember-fr-markdown-file": "0.0.0",
+    "ember-load": "0.0.11",
     "ember-load-initializers": "^0.5.1",
     "ember-moment": "6.1.0",
     "ember-remodal": "^1.1.0",
