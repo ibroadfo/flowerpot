@@ -16,6 +16,9 @@ export default DS.Model.extend({
   title: DS.attr(),
   note: DS.attr(),
   timestamp: DS.attr('number'),
-  whitelisted: DS.attr('boolean', { default:false })
+  whitelisted: DS.attr('boolean', { default:false }),
+  tweetString: Ember.computed('title', 'note', function() {
+    return this.get('title') + " [" + this.get('note') + "]";
+  }),
 
 });
