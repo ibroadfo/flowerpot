@@ -8,7 +8,12 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/ibroadfo/flowerpot",
+  "homepage": "http://flowerpot.fyi",
+  "dependencies": {},
+  "keywords": [],
+  "bugs": "https://github.com/ibroadfo/flowerpot/issues",
+  "private": true,
   "scripts": {
     "build": "ember build",
     "start": "ember server",
