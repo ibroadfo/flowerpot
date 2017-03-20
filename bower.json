@@ -2,7 +2,6 @@
   "name": "flowerpot",
   "dependencies": {
     "pretender": "~1.1.0",
-    "lodash": "~3.7.0",
     "Faker": "~3.1.0",
     "jquery.rot13": "^1.0.0",
     "firebase": "^3.0.0",
