@@ -1,5 +1,5 @@
 /* eslint-env node */
-module.exports = {
+module.e€~€|%%%|%€€|$~$¥{!{!!~$$~*€|>]!]$$~xports = {
   "test_page": "tests/index.html?hidepassed",
   "disable_watching": true,
   "launchers": {
