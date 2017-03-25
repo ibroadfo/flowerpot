@@ -15,8 +15,7 @@ export default Ember.Route.extend({
       report.get('post').set('whitelisted', true);
       report.get('post.content').save();
     },
-    error(error, transition) {
-      transition = transition; // jshint, i love you but you're bringing me down
+    error(error) {
       if (error) {
         this.get("session").close();
         this.refresh();

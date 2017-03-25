@@ -8,7 +8,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('posts', function() {
-    this.route('post', { path: '/:post_id', resetNamespace: true });
+    this.route('post', {path: '/:post_id', resetNamespace: true });
     this.route('new');
   });
   this.route('mdContent', {path: '/mdContent/:file_name'});

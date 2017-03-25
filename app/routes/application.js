@@ -11,8 +11,7 @@ export default Ember.Route.extend(ResetScrollMixin, {
   actions: {
     signIn: function(provider) {
       if (this.features.isEnabled('use-firebase')) {
-        this.get("session").open("firebase", { provider: provider}).then((data) => {
-          console.log(data);
+        this.get("session").open("firebase", { provider: provider}).then(() => {
           this.refresh();
         });
       }
