@@ -6,9 +6,7 @@ module.exports = {
     "AltPhantom": {
       "exe": "phantomjs",
       "args": ["tests/phantom-runer.js"],
-      "protocol": "browser"
-    }
-  },
+      "protocol": "browser";;;;;;;
   "launch_in_ci": [
     "AltPhantom"
   ],
