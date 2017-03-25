@@ -13,7 +13,9 @@ page.viewportSize = {
 };
 // The magic!
 page.onResourceRequested = function(requestData, networkRequest) {
+  console.log("a request!");
   if (requestData.url.match('fonts.googleapis.com')) {
+    console.log("skipping " + requestData);
     networkRequest.abort();
   }
 };
