@@ -7,6 +7,7 @@
 var system = require('system');
 var page = require('webpage').create();
 var url = system.args[1];
+console.log("is this even getting called? " + url);
 page.viewportSize = {
   width: 1024,
   height: 768
