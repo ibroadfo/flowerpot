@@ -5,7 +5,7 @@ module.exports = {
   "launchers": {
     "AltPhantom": {
       "exe": "phantomjs",
-      "args": ["tests/phantom-runner.js"],
+      "args": ["tests/phantom-runer.js"],
       "protocol": "browser"
     }
   },
