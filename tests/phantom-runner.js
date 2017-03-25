@@ -1,4 +1,6 @@
 /*eslint-env node*/
+/*eslint no-console: "off"*/
+
 // Borrowed from https://github.com/ember-cli/ember-cli/issues/3894#issuecomment-212946925
 // Custom version of the Testem PhantomJS runner.
 //   This exists to block requests to fonts.googleapis.com because this can cause
