@@ -56,7 +56,7 @@
     "ember-resolver": "^2.0.3",
     "ember-social": "0.3.0",
     "ember-source": "~2.12.0",
-    "emberfire": "2.0.5",
+    "emberfire": "ibroadfo/emberfire",
     "loader.js": "^4.2.3",
     "torii": "0.8.0"
   },
