@@ -16,6 +16,7 @@ module.exports = function(deployTarget) {
 
   if (deployTarget === 'staging') {
     ENV.build.environment = 'production';
+    ENV.fireBaseAppName = 'flowerpot-staging';
     // configure other plugins for staging deploy target here
   }
 
