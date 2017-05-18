@@ -13,6 +13,7 @@ Router.map(function() {
   });
   this.route('mdContent', {path: '/mdContent/:file_name'});
   this.route('admin');
+  this.route('page-not-found', { path: '/*wildcard' });
 });
 
 export default Router;
