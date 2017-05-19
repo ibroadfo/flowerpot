@@ -1,6 +1,6 @@
 {{partial 'otherHeader'}}
 
-<main role="main">
+<main role="main" id="main">
 {{outlet}}
 {{#if session.isAuthenticated}}
   Logged in as {{session.currentUser.displayName}}
