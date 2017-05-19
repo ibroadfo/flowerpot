@@ -10,9 +10,9 @@ $sans: 'Karla', sans-serif;
 
 
   a {
-   color: #888;
-    &:hover {
-     color: #aaa;
+   color: #595959;
+    &:hover, &:focus {
+     color: #AAA;
     }
     &.home-link {
       text-transform: uppercase;
@@ -26,7 +26,7 @@ $sans: 'Karla', sans-serif;
 
 body{
   font-family: $sans;
-  color: #555;
+  color: #333;
   padding: 0 0;
   margin: 0 0;
 }
@@ -40,6 +40,15 @@ header {
 .alert {
   border: none;
   margin-bottom: 0;
+}
+
+.hidden {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
 }
 
 header.subpage {
@@ -71,7 +80,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 1px;
   a {
-    color: #888;
+    color: #595959;
   text-decoration: none;
   }
 }
@@ -145,7 +154,7 @@ ul {
   border-radius: 4px;
     font-size: 0.9rem;
     border-radius: 4px;
-    label {
+    span {
       margin-bottom: 0;
     }
 }
@@ -157,14 +166,20 @@ ul {
   font-size: smaller;
 }
 
+button, .button {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .button.create-new, .button.button-decode {
-  background: #9FDFAC;
-  border: 1px solid #9FDFAC;
+  background: #307547;
+  border: 1px solid #307547;
   color: white;
   transition-duration: 200ms;
   &:hover {
-    background: darken(#9FDFAC, 5%);
-    border: 1px solid #9FDFAC;
+    background: darken(#307547, 10%);
+    border: 1px solid #307547;
   }
 }
 
@@ -224,6 +239,9 @@ footer {
   p {
    font-size: .925rem;
   }
+  a {
+    color: #eee;
+  }
 }
 
 .report-abuse {
@@ -267,7 +285,7 @@ dt {
   height: 40px;
   position: relative;
   text-align: center;
-  
+
   -webkit-animation: sk-rotate 2.0s infinite linear;
   animation: sk-rotate 2.0s infinite linear;
 }
@@ -280,7 +298,7 @@ dt {
   top: 0;
   background-color: #333;
   border-radius: 100%;
-  
+
   -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
   animation: sk-bounce 2.0s infinite ease-in-out;
 }
@@ -301,10 +319,10 @@ dt {
 }
 
 @keyframes sk-bounce {
-  0%, 100% { 
+  0%, 100% {
     transform: scale(0.0);
     -webkit-transform: scale(0.0);
-  } 50% { 
+  } 50% {
     transform: scale(1.0);
     -webkit-transform: scale(1.0);
   }
