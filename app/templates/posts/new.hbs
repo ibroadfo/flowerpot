@@ -1,6 +1,6 @@
 {{partial 'otherHeader'}}
 
-<main role="main">
+<main role="main" id="main">
 {{outlet}}
 <div class="row">
   <div class="two columns"> </div>
@@ -15,15 +15,15 @@
     on your post! Please keep your title neutral.</p>
 
     <form id="new-post-form">
-  <label>Post Title:
-  {{input class='title' value=model.title}}</label>
+  <label for="title">Post Title:</label>
+  {{input class='title' id='title' value=model.title}}
 
-  <label>Warning: <span>(be specific, so that readers know why
-    the content is potentially upsetting)</span>
-  {{textarea class='note' value=model.note}}</label>
+  <label for="note">Warning: <span>(be specific, so that readers know why
+    the content is potentially upsetting)</span></label>
+  {{textarea id='note' class='note' value=model.note}}
 
-  <label>Content:
-  {{textarea class='content' value=model.content}}</label>
+  <label for="content">Content:</label>
+  {{textarea class='content' value=model.content}}
 
   <button class="submit button create-new" {{action 'submitTheThing' model}}>Create</button>
 </form>
