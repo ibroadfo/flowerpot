@@ -1,4 +1,18 @@
-{{partial 'otherHeader'}}
-<main role="main" id="main">
-{{markdown-to-html markdown=(fr-markdown-file model)}}
-</main>
+<div class="two columns"></div>
+<div class="two columns sidebar">
+   <h1>
+     {{#link-to "index"}}
+       Flowerpot <sup><small>(beta)</small></sup>
+     {{/link-to}}
+   </h1>
+     {{link-to "Create post" 'posts.new' class="create-new"}}
+     {{link-to "See an Example" 'post' 'example'}}
+     {{#if features.showIndex}}
+       {{link-to "list of posts (beta only)" "posts.index"}}
+     {{/if}}
+</div>
+<div class="six columns">
+  <main role="main" id="main">
+    {{markdown-to-html markdown=(fr-markdown-file model)}}
+  </main>
+</div>

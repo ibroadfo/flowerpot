@@ -6,19 +6,19 @@
 
     <div class="two columns"></div>
     <div class="eight columns">
-      {{#link-to "index" class="home-link button"}}
-        &lt; FLOWERPOT
-      {{/link-to}}
 
       <article>
         <div class="header">
+          {{#link-to "index" class=""}}
+            Back to Flowerpot
+          {{/link-to}} or {{link-to "create your own post" 'posts.new'}}
           <h3 class="post-title">{{model.title}}</h3>
           <span class="report-post-abuse">{{report-abuse model=model createReport="createReport"}}</span>
         </div>
 
 
         <div class="warning-note">
-          <span>Content note:</span>
+          <strong>Content warning note:</strong>
           <p>
             {{model.note}}
           </p>

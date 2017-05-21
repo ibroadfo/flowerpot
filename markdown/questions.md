@@ -1,7 +1,19 @@
-<div class="two columns"> </div>
-<div class="eight columns faq">
+### About Flowerpot
 
-<h3>FAQ</h3>
+Information sharing is important. But reading content on platforms without proper warnings
+  can be a harmful, triggering experience.
+
+Flowerpot helps you share sensitive content safely by putting warnings first and asking readers’ consent before displaying.
+
+<p>When you submit a post that could be unsafe for some readers, we ask you to add a specific content warning noting any sensitive topics.
+
+We’ll then scramble up the content, showing only the content note.
+
+To view the post, users can easily unscramble the content by clicking “display content”.
+
+[See an example post](/posts/example)
+
+Flowerpot is currently in beta, which means the data may get wiped occasionally, and features may appear and disappear without warning.
 
   <dl>
     <dt>What is Flowerpot?</dt>
@@ -44,5 +56,3 @@
   <dt>Can I log in and save posts?</dt>
   <dd>Nope. To help minimise users' exposure to abuse, we made the decision not to store any login details.</dd>
 </dl>
-
-</div>

@@ -1,33 +1,30 @@
-{{partial 'otherHeader'}}
-
-<main role="main" id="main">
 {{outlet}}
 <div class="row">
   <div class="two columns"> </div>
-  <div class="eight columns">
-  <h3>Create New Post</h3>
-  <p>Creating a Flowerpot posts hides potentially upsetting content, making sure
-    that those potentially upset by the content won't read it by accident. You
-    can  {{link-to "see an example" 'post' 'example'}}.</p>
+  <div class="eight columns">{{#link-to "index" class=""}}
+    Back to Flowerpot
+  {{/link-to}}
+    <h3>Create New Post</h3>
+    <p>Creating a Flowerpot posts hides potentially upsetting content, making sure
+      that those potentially upset by the content won't read it by accident. You
+      can  {{link-to "see an example" 'post' 'example'}}.</p>
 
-    <p>You write a warning note for each post describing why the content might be
-    upsetting, and readers consent to reading by clicking the 'Display' button
-    on your post! Please keep your title neutral.</p>
+      <p>You write a warning note for each post describing why the content might be
+      upsetting, and readers consent to reading by clicking the 'Display' button
+      on your post! Please keep your title neutral.</p>
 
     <form id="new-post-form">
-  <label for="title">Post Title:</label>
-  {{input class='title' id='title' value=model.title}}
+      <label for="title">Post Title:</label>
+      {{input class='title' id='title' value=model.title}}
 
-  <label for="note">Warning: <span>(be specific, so that readers know why
-    the content is potentially upsetting)</span></label>
-  {{textarea id='note' class='note' value=model.note}}
+      <label for="note">Warning: <span>(be specific, so that readers know why
+        the content is potentially upsetting)</span></label>
+      {{textarea id='note' class='note' value=model.note}}
 
-  <label for="content">Content:</label>
-  {{textarea class='content' value=model.content}}
+      <label for="content">Content:</label>
+      {{textarea class='content' value=model.content}}
 
-  <button class="submit button create-new" {{action 'submitTheThing' model}}>Create</button>
-</form>
+      <button class="submit button create-new" {{action 'submitTheThing' model}}>Create</button>
+    </form>
   </div>
-  <div class="two columns"></div>
 </div>
-</main>

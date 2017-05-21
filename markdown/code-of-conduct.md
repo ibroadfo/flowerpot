@@ -1,5 +1,4 @@
-<div class="two columns"> </div>
-<div class="eight columns">
+<div class="coc">
   <h2>Code of Conduct</h2>
 
 <p>This Code of Conduct applies to everyone interacting with Flowerpot; we trust and hope that you will utilise the application in good faith, and not for the harrassment or abuse of others. We outline our Code of Conduct here, with respect both to those using the app and those contributing to it. If we have made an error in the Code, or if it could be strengthened, please do not hesitate to contribute and send a PR.</p>

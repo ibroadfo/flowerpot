@@ -1,12 +1,12 @@
 @import "normalize";
 @import "skeleton";
-@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
-@import url(https://fonts.googleapis.com/css?family=Karla:400,700);
+@import url(https://fonts.googleapis.com/css?family=Hind:400,700);
+@import url('https://fonts.googleapis.com/css?family=Rasa');
 
 //* { outline: 1px dashed #AAA; }
 
-$sanstwo: 'Fjalla One', sans-serif;
-$sans: 'Karla', sans-serif;
+// $serif: 'Scope One', serif;
+$sans: 'Rasa', sans-serif;
 
 
   a {
@@ -21,6 +21,10 @@ $sans: 'Karla', sans-serif;
     }
   }
 
+  small {
+    font-size: 1rem;
+  }
+
 .posts-post-route header{display: none;}
 .posts-post-route footer{display: none;}
 
@@ -32,7 +36,7 @@ body{
 }
 
 header {
-  padding: 3rem 0;
+  padding: 0;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -51,20 +55,30 @@ header {
   overflow:hidden;
 }
 
-header.subpage {
-    text-align: left;
-   margin-bottom: 3rem;
-  border-bottom: 1px solid #DDD;
+// header.subpage {
+//     text-align: left;
+//    margin-bottom: 3rem;
+//   border-bottom: 1px solid #DDD;
+//
+//   h2 {
+//   }
+//   .button {
+//      margin-bottom: 0;
+//   }
+//   #nav {
+//     text-align: right;
+//   }
+// }
 
-  h2 {
-    font-size: 1rem;
-  }
-  .button {
-     margin-bottom: 0;
-  }
-  #nav {
-    text-align: right;
-  }
+.sidebar {
+  h1 {
+  font-size: 1.2rem;
+text-transform: none;
+letter-spacing: normal;
+margin-bottom: 1rem;}
+a {
+  display: block;
+}
 }
 
 h1, h2, h3, h4, h5 {
@@ -74,7 +88,6 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 1.25rem;
   margin: 0 0;
   font-family: $sans;
   text-transform: uppercase;
@@ -86,13 +99,15 @@ h1 {
 }
 
 h2 {
-  font-size: 1.75rem;
   font-weight: normal;
   letter-spacing: normal;
+  line-height: 1.6;
+  &.subtitle {
+    font-size: 1.5rem;
+  }
 }
 
 h3 {
- font-size: 1.25rem;
   margin-bottom: 1rem;
   &.post-title {
     margin-top: 1rem;
@@ -102,7 +117,6 @@ h3 {
 
 article {
   .header {
-    text-align: center;
     margin-bottom: 1rem;
     span {
       font-size: 0.8rem;
@@ -122,13 +136,14 @@ h4 {
 }
 
 h5 {
- font-size: 1.25rem;
+ font-size: 1.1rem;
   font-family: $sans;
 }
 
 #psa {
   background: #eee;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.5rem 0.5rem;
+  margin-bottom: 3rem;
   border-radius: 0.5rem;
   h5 {  margin-bottom: 0;
     color: #C2474B;
@@ -149,8 +164,8 @@ ul {
 
 .warning-note {
   border: 1px solid #C2474B;
-  text-align: center;
-  padding: 1rem;
+  padding: 1rem 1rem 0;
+  margin-bottom: 1rem;
   border-radius: 4px;
     font-size: 0.9rem;
     border-radius: 4px;
@@ -185,7 +200,6 @@ button, .button {
 
 .button.button-decode {
  display: block;
- margin: 0 auto;
 }
 
 .global-warning {
@@ -193,6 +207,7 @@ button, .button {
   display: block;
   text-align: center;
   padding: 0.5rem 0;
+  margin-bottom: 3rem;
   background: #C2474B;
   font-size: 0.8rem;
   a {
@@ -260,7 +275,7 @@ dt {
  text-decoration: underline;
 }
 
-#getting-started {
+main {
    img {
      display: block;
      max-width: 100%;
@@ -268,7 +283,6 @@ dt {
    }
 }
 
-.faq {
   dt {
     font-weight: bold;
     text-decoration: none;
@@ -277,7 +291,6 @@ dt {
     margin-bottom: 1rem;
     margin-left: 0;
   }
-}
 
 .spinner {
   margin: 100px auto;

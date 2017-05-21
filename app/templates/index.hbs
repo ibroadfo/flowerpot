@@ -1,54 +1,47 @@
-<header role="banner">
+
   <div class="container">
     <div class="row">
-     <div class="column">
+     <div class="one columns"></div>
+     <div class="ten columns">
+
+       <header role="banner">
       <h1>
         {{#link-to "index"}}
-          Flowerpot <span style='font-size:small'>(beta)</span>
+          Flowerpot <sup><small>(beta)</small></sup>
         {{/link-to}}
       </h1>
-      <h2>Share content safely.</h2>
+      <h2 class="subtitle">Share content safely by scrambling it, adding warning notes, and asking readers' consent.
+        {{link-to "Read more" "mdContent" "questions"}}
+      </h2>
 
       <nav role="navigation">
-        {{link-to "Create New Post" 'posts.new' class="button create-new"}}
-        {{link-to "See an Example Post" 'post' 'example' class="button"}}
+        {{link-to "Create post" 'posts.new' class="button create-new"}}
+        {{link-to "See an Example" 'post' 'example' class="button"}}
         {{#if features.showIndex}}
           {{link-to "list of posts (beta only)" "posts.index" class="button"}}
         {{/if}}
       </nav>
-      <h4>Information sharing is important. But reading content on platforms without proper warnings can be a harmful, triggering experience.</h4>
-      </div>
-    </div>
-  </div>
 </header>
 
 <main role="main" id="main">
-  <h3>What is Flowerpot?</h3>
-
-  <p>Flowerpot helps you share sensitive content safely by putting warnings first and asking readers’ consent before displaying.</p>
-  <p>When you submit a post that could be unsafe for some readers, we ask you to add a specific content warning noting any sensitive topics.</p>
-  <p>We’ll then scramble up the content, showing only the content note.</p>
-  <p>To view the post, users can easily unscramble the content by clicking “display content”.</p>
-  <p> {{link-to "See an Example Post" 'post' 'example'}} </p>
-
-  <p>Flowerpot is currently in beta, which means the data may get wiped occasionally, and features may appear and disappear without warning.</p>
-
   <div id="psa">
-    <h5>Flowerpot is only for good, never for evil</h5>
-    <p> Flowerpot was created to ensure readers’ safety. We take abuse very seriously. </p>
-    <p> All users are expected to follow our (hopefully) comprehensive {{link-to "Code of Conduct" "mdContent" "code-of-conduct"}}. {{link-to "Get in touch" "mdContent" "contact-us"}} if you have any questions, comments, concerns or contributions to the Code. </p>
-    <p> Report individual instances of abuse by using the ‘report abuse’ link on the post page, or <a href="mailto:abuse@flowerpot.fyi">contact us by email</a>. </p>
-    <p> All abusive content will be removed. </p>
+    <h5>Only for good, never for evil</h5>
+    <p> Flowerpot was created to ensure readers’ safety. All users are expected
+      to follow our (hopefully) comprehensive
+      {{link-to "Code of Conduct" "mdContent" "code-of-conduct"}}. Abusive content
+        will be removed.</p>
+    <p>Report abuse by using the ‘report abuse’ link on the post's page, or
+      {{link-to "contact us directly" "mdContent" "contact-us"}}.</p>
   </div>
 
-  <h3> For the development-inclined </h3>
-  <p> If you’d like to contribute to Flowerpot, <a href="https://github.com/ibroadfo/flowerpot">here is our Github repo</a>. We also have a {{link-to "Getting Started Guide" "mdContent" "getting-started" class=""}}. </p>
-  <p> Don’t feel comfortable with Github, but still want to pitch in? {{link-to "Get in touch" "mdContent" "contact-us"}}. We’d love your support and are happy to help you get started. </p>
-
-  <h3> Want to know more? </h3>
-  <p> You can find more info in the {{link-to "FAQ" "mdContent" "questions"}},  {{link-to "Code of Conduct" "mdContent" "code-of-conduct" class=""}}, and {{link-to "Privacy" "mdContent" "privacy" class=""}} sections. </p>
-  <p> {{link-to "Get in touch" "mdContent" "contact-us"}} if you have a question that’s gone unanswered. </p>
-
-{{link-to "Create New Post" 'posts.new' class="button create-new"}}
-
+  <h4>Want to contribute?</h4>
+  <p>Awesome! Head on over to <a href="https://github.com/ibroadfo/flowerpot">our Github repo</a>!</p>
+  <p>If you're not comfortable with Github, we have a
+    {{link-to "Getting Started guide" "mdContent" "getting-started" class=""}}.
+    We also encourage you to
+    {{link-to "get in touch" "mdContent" "contact-us"}}! We’re happy to help you get started. </p>
 </main>
+
+</div>
+</div>
+</div>
