@@ -18,8 +18,9 @@ export default Ember.Route.extend(ResetScrollMixin, {
     },
     signOut: function() {
       if (this.features.isEnabled('use-firebase')) {
-        this.get("session").close();
-        this.refresh();
+        this.get("session").close().then(() => {
+          this.refresh();
+        });
       }
     }
   }
